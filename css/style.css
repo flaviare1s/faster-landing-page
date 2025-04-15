@@ -10,3 +10,34 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+body {
+  font-family: var(--font-family-poppins);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#footer {
+  background-color: var(--dark);
+  color: white;
+}
+
+.footer-link {
+  text-decoration: none;
+  color: white;
+}
+
+.footer-link:hover {
+  text-decoration: underline;
+}
+
+.copyright-link {
+  text-decoration: none;
+  color: var(--primary);
+}
+
+.footer-title {
+  color: var(--primary);
+}
