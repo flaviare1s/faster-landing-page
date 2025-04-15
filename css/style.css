@@ -24,6 +24,12 @@ body {
   color: white;
 }
 
+.footer-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 2fr;
+  padding: 50px 20px;
+}
+
 .footer-link {
   text-decoration: none;
   color: white;
@@ -40,4 +46,34 @@ body {
 
 .footer-title {
   color: var(--primary);
+}
+
+.footer-list {
+  list-style-type: none;
+}
+
+.footer-list li i {
+  margin-right: 10px;
+}
+
+.copyright-section {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.copyright p {
+  width: 70%;
+}
+
+.copyright-list {
+  list-style-type: none;
+  display: flex;
+  gap: 20px;
+}
+
+@media (max-width: 768px) {
+  #footer {
+    
+  }
 }
