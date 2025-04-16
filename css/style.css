@@ -191,14 +191,14 @@
 @media screen and (max-width: 768px) {
   .footer-grid {
   grid-template-columns: 1fr;
-  padding: 70px 15px;
+  padding: 40px 15px;
   }
 
   .copyright-section {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 20px 50px 0px 50px;
+    padding: 20px 30px 20px 50px;
   }
 
   .copyright p {
