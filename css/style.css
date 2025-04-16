@@ -22,12 +22,17 @@ body {
 #footer {
   background-color: var(--dark);
   color: white;
+  font-size: .7rem;
+}
+
+#footer p, li {
+  margin-bottom: 10px;
 }
 
 .footer-grid {
   display: grid;
   grid-template-columns: 1fr 1fr 2fr;
-  padding: 50px 20px;
+  padding: 70px 30px;
 }
 
 .footer-link {
@@ -46,6 +51,8 @@ body {
 
 .footer-title {
   color: var(--primary);
+  font-size: 1.2rem;
+  margin-bottom: 16px;
 }
 
 .footer-list {
@@ -72,8 +79,9 @@ body {
   gap: 20px;
 }
 
-@media (max-width: 768px) {
-  #footer {
-    
-  }
+@media screen and (max-width: 768px) {
+  .footer-grid {
+  grid-template-columns: 1fr;
+  padding: 70px 15px;
+}
 }
