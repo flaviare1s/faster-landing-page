@@ -97,13 +97,26 @@
     margin-left: 50px;
   }
 
+  .get-a-quote{
+    display: flex;
+    text-align: right;
+  }
+
+
+
   .menu-lista {
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
     list-style: none;
     max-width: 400px;
     position: absolute;
+  }
+
+  .menu-opt {
+    text-decoration: none;
+    color: var(--dark);
+    font-family: var(--font-family-poppins);
+    font-size: 1rem;
   }
   
 .preenchimento-form {
@@ -118,11 +131,6 @@
 }
 .cabecalho {
     background-color: var(--secondary);
-}
-
-a {
-    padding: 20px;
-    text-decoration: none;
 }
 
 .pricing-plan .container {
