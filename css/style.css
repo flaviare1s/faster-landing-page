@@ -1,4 +1,5 @@
 :root {
+    --sombra: 0px 4px 4px rgba(0, 0, 0, 0.25);
     --primary: #FF4800;
     --secondary: #F2F2F4;
     --dark: #1F1F2E;
@@ -9,6 +10,34 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+  }
+
+  .background {
+    z-index: -1;
+    position: absolute;
+  }
+
+  .banner-texto {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    max-width: 600px;
+    margin: 0 auto;
+    z-index: 1;
+  }
+
+  .banner-texto h4 {
+    font-family: var(--font-family-poppins);
+    font-size: 2rem;
+    color: var(--primary);
+  }
+
+  .banner-texto h1 {
+    font-family: var(--font-family-poppins);
+    font-size: 3rem;
+    color: var(--secondary);
   }
 
   .container h4{
@@ -23,8 +52,13 @@
     color: var(--dark);
   }
 
+  .quote {
+    padding-top: 450px;
+  }
+
   .quote-form{
     max-width: 650px;
+    position: relative;
   }
 
   .quote-form p{
@@ -56,3 +90,31 @@
     color: var(--primary);
   }
 
+  .menu-lista {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    list-style: none;
+    max-width: 400px;
+  }
+
+    .menu-lista li {
+        font-family: var(--font-family-poppins);
+        font-size: 0.9rem;
+        color: var(--dark);
+    }
+
+    .menu-lista li :hover {
+        color: var(--secondary);
+        background-color: var(--primary);
+    }
+.preenchimento-form {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+}
+
+.quadro-form {
+    display: flex;
+    max-width: 400px;
+}
