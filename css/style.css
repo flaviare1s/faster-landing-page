@@ -247,6 +247,19 @@ body {
   text-decoration: underline;
 }
 
+.touch-link {
+  text-decoration: none;
+  color: white;
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  gap: 7px;
+}
+
+.touch-link:hover {
+  text-decoration: underline;
+}
+
 #footer i {
   margin-right: 3px;
 }
@@ -274,6 +287,8 @@ body {
   height: 20px;
   box-sizing: content-box;
   padding: 8px;
+  color: white;
+  text-decoration: none;
 }
 
 .newsletter {
@@ -293,7 +308,7 @@ body {
 
 #footer button {
   padding: 20px;
-  width: 120px;
+  width: 130px;
   background-color: var(--primary);
   color: white;
   border: none;
@@ -372,4 +387,8 @@ body {
   .footer-title {
     margin-top: 20px;
   }
+
+  #footer button {
+  font-size: 14px;
+}
 }
