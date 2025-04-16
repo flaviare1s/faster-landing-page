@@ -53,7 +53,8 @@
   }
 
   .quote {
-    padding-top: 450px;
+    margin-top: 450px;
+    margin-left: 200px;
   }
 
   .quote-form{
@@ -90,24 +91,21 @@
     color: var(--primary);
   }
 
+  .logo{
+    position: absolute;
+    margin-top: 4px;
+    margin-left: 50px;
+  }
+
   .menu-lista {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     list-style: none;
     max-width: 400px;
+    position: absolute;
   }
-
-    .menu-lista li {
-        font-family: var(--font-family-poppins);
-        font-size: 0.9rem;
-        color: var(--dark);
-    }
-
-    .menu-lista li :hover {
-        color: var(--secondary);
-        background-color: var(--primary);
-    }
+  
 .preenchimento-form {
     display: flex;
     flex-direction: column;
@@ -118,3 +116,185 @@
     display: flex;
     max-width: 400px;
 }
+.cabecalho {
+    background-color: var(--secondary);
+}
+
+a {
+    padding: 20px;
+    text-decoration: none;
+}
+
+.pricing-plan .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.team .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.blog .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Estilo do footer */
+
+#footer {
+    background-color: var(--dark);
+    color: white;
+    font-size: .7rem;
+  }
+  
+  #footer p {
+    margin-bottom: 10px;
+  }
+  
+  .quick-link {
+    margin-bottom: 5px;
+    display: flex;
+    align-items: center;
+    gap: 3px;
+  }
+  
+  .quick-link i {
+    font-size: .5rem;
+  }
+  
+  .footer-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1.5fr;
+    padding: 60px 30px 50px 30px;
+  }
+  
+  .footer-link {
+    text-decoration: none;
+    color: white;
+  }
+  
+  .footer-link:hover {
+    text-decoration: underline;
+  }
+  
+  #footer i {
+    margin-right: 3px;
+  }
+  
+  .contact-icons {
+    display: flex;
+    gap: 5px;
+    margin-top: 15px;
+  }
+  
+  .contact-icon {
+    text-align: center;
+    font-size: .7rem;
+    padding-left: 3px;
+  }
+  
+  .social-media-icon {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid white;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    box-sizing: content-box;
+    padding: 2px;
+  }
+  
+  .newsletter {
+    display: flex;
+  }
+  
+  #footer input {
+    padding: 7px 30px;
+    border: none;
+    width: 100%;
+  }
+  
+  #footer button {
+    padding: 7px 30px;
+    background-color: var(--primary);
+    color: white;
+    border: none;
+    margin-left: -3px;
+  }
+  
+  #footer hr {
+    border: 1px solid rgba(255, 255, 255, 0.219);
+  }
+  
+  .copyright-link {
+    text-decoration: none;
+    color: var(--primary);
+  }
+  
+  .footer-title {
+    color: var(--primary);
+    font-size: 1.1rem;
+    margin-bottom: 16px;
+  }
+  
+  .footer-list {
+    list-style-type: none;
+  }
+  
+  .footer-list li i {
+    margin-right: 10px;
+  }
+  
+  .copyright-section {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 20px;
+  }
+  
+  .copyright p {
+    width: 70%;
+  }
+  
+  .copyright-list {
+    list-style-type: none;
+    display: flex;
+    gap: 20px;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .footer-grid {
+    grid-template-columns: 1fr;
+    padding: 40px 15px;
+    }
+  
+    .copyright-section {
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 20px 30px 20px 50px;
+    }
+  
+    .copyright p {
+      width: 100%;
+    text-align: center;
+    }
+  
+    .footer-title {
+      margin-top: 20px;
+    }
+  }
