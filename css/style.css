@@ -1,0 +1,58 @@
+:root {
+    --primary: #FF4800;
+    --secondary: #F2F2F4;
+    --dark: #1F1F2E;
+    --font-family-poppins: "Poppins", sans-serif;
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  .container h4{
+    font-family: var(--font-family-poppins);
+    font-size: 1rem;
+    color: var(--primary);
+  }
+  
+  .container h1 {
+    font-family: var(--font-family-poppins);
+    font-size: 2.3rem;
+    color: var(--dark);
+  }
+
+  .quote-form{
+    max-width: 650px;
+  }
+
+  .quote-form p{
+    font-family: var(--font-family-poppins);
+    font-size: 1rem;
+    color: var(--dark);
+  }
+  
+  .grid-quote-dados{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    max-width: 500px;
+  }
+
+  .quote-dados{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .quote-dados p{
+    font-family: var(--font-family-poppins);
+    font-size: 1rem;
+    color: var(--dark);
+  }
+  
+  .quote-dados h1{
+    font-family: var(--font-family-poppins);
+    font-size: 2.3rem;
+    color: var(--primary);
+  }
+
