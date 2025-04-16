@@ -11,6 +11,14 @@
     box-sizing: border-box;
   }
 
+  body {
+  font-family: var(--font-family-poppins);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  }
+
   .container h4{
     font-family: var(--font-family-poppins);
     font-size: 1rem;
@@ -56,13 +64,7 @@
     color: var(--primary);
   }
 
-body {
-  font-family: var(--font-family-poppins);
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
+/* Estilo do footer */
 
 #footer {
   background-color: var(--dark);
@@ -87,6 +89,10 @@ body {
 
 .footer-link:hover {
   text-decoration: underline;
+}
+
+#footer hr {
+  border: 1px solid rgba(255, 255, 255, 0.219);
 }
 
 .copyright-link {
@@ -128,5 +134,17 @@ body {
   .footer-grid {
   grid-template-columns: 1fr;
   padding: 70px 15px;
-}
+  }
+
+  .copyright-section {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 50px;
+  }
+
+  .copyright p {
+    width: 100%;
+  text-align: center;
+  }
 }
