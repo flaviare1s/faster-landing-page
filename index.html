@@ -2,31 +2,54 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
-  <link rel="stylesheet" href="./css/style.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="shortcut icon" href="favicon.png" type="image/x-icon" />
+  <link rel="stylesheet" href="./css/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link
     href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-    rel="stylesheet">
-    <script src="https://kit.fontawesome.com/c78e85199e.js" crossorigin="anonymous"></script>
+    rel="stylesheet" />
+  <script src="https://kit.fontawesome.com/c78e85199e.js" crossorigin="anonymous"></script>
   <title>Faster</title>
 </head>
 
 <body>
-  <header>
-    <!-- Header aqui -->
+  <header class="cabeçalho">
+    <div class="logo">
+      <img src="" alt="" />
+    </div>
+    <div class="menu">
+      <ul class="menu-lista">
+        <li>Home</li>
+        <li>About</li>
+        <li>Service</li>
+        <li>Price</li>
+        <li>Pages</li>
+        <li>Contact</li>
+      </ul>
+    </div>
   </header>
-
   <main>
-    <section id="banner">
-      <!-- Banner aqui -->
+    <section class="banner">
+      <div class="background">
+        <img src="assets/img/header.jpg" alt="" />
+      </div>
+      <div class="banner-texto">
+        <h4>Safe & Faster</h4>
+        <h1>Logistic Services</h1>
+      </div>
+      <div class="tracking-id">
+        <input type="text" placeholder="Enter Tracking ID" />
+        <button type="button">Track & Trace</button>
+      </div>
     </section>
-
-    <section id="quote">
-      <!-- Sessão Get a Quote aqui -->
+    <section class="quote" id="quote">
+      <div class="container">
+        <h3>GET A QUOTE</h3>
+        <h1>Request A Free Quote</h1>
+      </div>
     </section>
 
     <section id="pricing">
@@ -40,14 +63,15 @@
     <section id="blog">
       <!-- Sessão Our Blog aqui -->
     </section>
-
   </main>
-  
+
   <footer id="footer">
     <section class="footer-grid">
       <div class="section-footer">
         <h2 class="footer-title">Get In Touch</h2>
-        <p><i class="fa-solid fa-location-dot"></i> 123 Street, New York, USA</p>
+        <p>
+          <i class="fa-solid fa-location-dot"></i> 123 Street, New York, USA
+        </p>
         <p><i class="fa-solid fa-phone"></i> +012 345 67890</p>
         <p><i class="fa-solid fa-envelope"></i> info@example.com</p>
         <div class="contact-icons">
@@ -60,25 +84,43 @@
       <div class="section-footer">
         <h2 class="footer-title">Quick Links</h2>
         <ul class="footer-list">
-          <li><i class="fa-solid fa-angle-right"></i><a class="footer-link" href="#">Home</a></li>
-          <li><i class="fa-solid fa-angle-right"></i><a class="footer-link" href="#">About Us</a></li>
-          <li><i class="fa-solid fa-angle-right"></i><a class="footer-link" href="#">Our Services</a></li>
-          <li><i class="fa-solid fa-angle-right"></i><a class="footer-link" href="#">Pricing Plan</a></li>
-          <li><i class="fa-solid fa-angle-right"></i><a class="footer-link" href="#">Contact Us</a></li>
+          <li>
+            <i class="fa-solid fa-angle-right"></i><a class="footer-link" href="#">Home</a>
+          </li>
+          <li>
+            <i class="fa-solid fa-angle-right"></i><a class="footer-link" href="#">About Us</a>
+          </li>
+          <li>
+            <i class="fa-solid fa-angle-right"></i><a class="footer-link" href="#">Our Services</a>
+          </li>
+          <li>
+            <i class="fa-solid fa-angle-right"></i><a class="footer-link" href="#">Pricing Plan</a>
+          </li>
+          <li>
+            <i class="fa-solid fa-angle-right"></i><a class="footer-link" href="#">Contact Us</a>
+          </li>
         </ul>
       </div>
       <div class="section-footer">
         <h2 class="footer-title">Newsletter</h2>
-        <p>Rebum labore lorem dolores kasd est, et ipsum amet et at kasd, ipsum sea tempor magna tempor. Accu kasd sed ea duo
-        ipsum. Dolor duo eirmod sea justo no lorem est diam</p>
-        <input type="email" placeholder="Your Email Address">
+        <p>
+          Rebum labore lorem dolores kasd est, et ipsum amet et at kasd, ipsum
+          sea tempor magna tempor. Accu kasd sed ea duo ipsum. Dolor duo
+          eirmod sea justo no lorem est diam
+        </p>
+        <input type="email" placeholder="Your Email Address" />
         <button>Sign Up</button>
       </div>
     </section>
     <section class="copyright-section">
       <div class="copyright">
-        <p>© <a class="copyright-link" href="#">Your Site Name</a>. All Rights Reserved. Designed by <a href="https://htmlcodex.com/" target="_blank" class="copyright-link">HTML Codex</a>
-        Distributed By: <a href="https://themewagon.com/" target="_blank" class="copyright-link">ThemeWagon</a></p>
+        <p>
+          © <a class="copyright-link" href="#">Your Site Name</a>. All Rights
+          Reserved. Designed by
+          <a href="https://htmlcodex.com/" target="_blank" class="copyright-link">HTML Codex</a>
+          Distributed By:
+          <a href="https://themewagon.com/" target="_blank" class="copyright-link">ThemeWagon</a>
+        </p>
       </div>
       <nav>
         <ul class="copyright-list">
