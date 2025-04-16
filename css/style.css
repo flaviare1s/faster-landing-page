@@ -335,6 +335,10 @@ body {
 /* Responsividade */
 
 @media screen and (max-width: 768px) {
+  .section-subtitle {
+    font-size: 30px;
+  }
+  
   #blog {
     width: 100%;
     padding: 20px;
