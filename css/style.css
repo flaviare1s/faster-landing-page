@@ -170,12 +170,13 @@
 
 .footer-list li i {
   margin-right: 10px;
+  font-weight: 900;
 }
 
 .copyright-section {
   display: flex;
   justify-content: space-between;
-  padding: 15px 20px;
+  padding: 15px 20px 5px 20px;
 }
 
 .copyright p {
