@@ -12,56 +12,153 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link
     href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-    rel="stylesheet" />
-  <script src="https://kit.fontawesome.com/c78e85199e.js" crossorigin="anonymous"></script>
+    rel="stylesheet">
+    <script src="https://kit.fontawesome.com/c78e85199e.js" crossorigin="anonymous"></script>
   <title>Faster</title>
 </head>
-
 <body>
-  <header class="cabeçalho">
-    <div class="logo">
-      <img src="" alt="" />
-    </div>
-    <div class="menu">
-      <ul class="menu-lista">
-        <li>Home</li>
-        <li>About</li>
-        <li>Service</li>
-        <li>Price</li>
-        <li>Pages</li>
-        <li>Contact</li>
-      </ul>
-    </div>
-  </header>
-  <main>
-    <section class="banner">
-      <div class="background">
-        <img src="assets/img/header.jpg" alt="" />
-      </div>
-      <div class="banner-texto">
-        <h4>Safe & Faster</h4>
-        <h1>Logistic Services</h1>
-      </div>
-      <div class="tracking-id">
-        <input type="text" placeholder="Enter Tracking ID" />
-        <button type="button">Track & Trace</button>
-      </div>
-    </section>
-    <section class="quote" id="quote">
-      <div class="container">
-        <h3>GET A QUOTE</h3>
-        <h1>Request A Free Quote</h1>
-      </div>
-    </section>
-
-    <section id="pricing">
-      <!-- Sessão Pricing Plan aqui -->
-    </section>
-
-    <section id="team">
-      <!-- Sessão Delivery Team aqui -->
-    </section>
-
+    <header class="cabeçalho">
+        <div class="logo">
+            <img src="assets/img/logo.png" alt="">
+        </div>
+        <div class="menu">
+            <ul class="menu-lista">
+                <li>Home</li>
+                <li>About</li>
+                <li>Service</li>
+                <li>Price</li>
+                <li>Pages</li>
+                <li>Contact</li>
+            </ul>
+        </div>
+        <div>
+            <a href="#quote">Get A Quote</a>
+        </div>
+    </header>
+    <main>
+        <section class="banner">
+            <div class="background">
+                <img src="assets/img/header.jpg" alt="">
+                <div class="overlay"></div>
+            </div>
+            <div class="banner-texto"> 
+                <h4><strong>Safe & Faster</strong></h4>
+                <h1><strong>Logistic Services</strong></h1>
+            </div>
+            <div class="tracking-id">
+                <input class="" type="text" placeholder="Tracking ID">
+                <button class="btn" type="button">Track & Trace</button>
+            </div>
+        </section>
+        <section class="quote" id="quote">
+          <div class="container">
+            <div class="grid-quote">
+              <div class="grid-quoteaa">
+                <div class="quote-texto">
+                  <h4>GET A QUOTE</h4>
+                  <h1><strong>Request A Free Quote</strong></h1>
+                  <article class="quote-form">
+                      <p>Dolores lorem lorem ipsum sit et ipsum. Sadip sea amet diam dolore sed et. Sit rebum labore sit sit ut vero no sit. Et elitr stet dolor sed sit et sed ipsum et kasd ut. Erat duo eos et erat sed diam duo</p>
+                  </article>
+                </div>
+                  <div class="grid-quote-dados">
+                      <div class="quote-info">
+                          <article class="quote-dados">
+                              <h1>225</h1>
+                              <p><strong>Skilled Experts</strong></p>
+                          </article>
+                          <article class="quote-dados">
+                              <h1>1050</h1>
+                              <p><strong>Happy Clients</strong></p>
+                          </article>
+                          <article class="quote-dados">
+                              <h1>2500</h1>
+                              <p><strong>Complete Projects</strong></p>
+                          </article>
+                      </div>
+                  </div>
+              </div>
+              <div class="formulario">
+                  <article>
+                    <form action="">
+                        <div class="preenchimento-form">
+                            <input type="text" placeholder="Your Name" required>
+                            <input type="email" placeholder="Your Email" required>
+                            <select name="select" required>
+                                <option value="base">Select A Service</option>
+                                <option value="valor1">a</option>
+                                <option value="valor2">b</option>
+                                <option value="valor3">c</option>
+                            </select>
+                            <button type="submit">Get A Quote</button>
+                        </div>
+                    </form>
+                  </article>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="pricing-plan">
+              <div class="container">
+                <h4>PRICING PLAN</h4>
+                <h1><strong>Affordable Pricing Packages</strong></h1>
+                <div class="grid-precos">
+                  <div class="basic">
+                    <article class="preco"><p>$</p><h1>49</h1><p class="month">/Mo</p></article>
+                    <div class="plan-name">
+                      <h2>Basic</h2>
+                    </div>
+                    <div class="plan-name">
+                      <p>HTML5 & CSS3</p>
+                      <p>Bootstrap 4</p>
+                      <p>Responsive Layout</p>
+                      <p>Compatible With All Browsers</p>
+                    </div>
+                    <div><button class="btn">Order Now</button></div>
+                  </div>
+                  <div class="premium">
+                    <article class="preco"><p>$</p><h1>99</h1><p class="month">/Mo</p></article>
+                    <div class="plan-name">
+                      <h2>Premium</h2>
+                    </div>
+                    <div class="plan-name">
+                      <p>HTML5 & CSS3</p>
+                      <p>Bootstrap 4</p>
+                      <p>Responsive Layout</p>
+                      <p>Compatible With All Browsers</p>
+                    </div>
+                    <div><button class="btn">Order Now</button></div>
+                  </div>
+                  <div class="business">
+                    <article class="preco"><p>$</p><h1>149</h1><p class="month">/Mo</p></article>
+                    <div class="plan-name">
+                      <h2>Business</h2>
+                    </div>
+                    <div class="plan-name">
+                      <p>HTML5 & CSS3</p>
+                      <p>Bootstrap 4</p>
+                      <p>Responsive Layout</p>
+                      <p>Compatible With All Browsers</p>
+                    </div>
+                    <div><button class="btn">Order Now</button></div>
+                  </div>
+                  <div>
+                  </div>
+                </div>
+              </div>
+          </section>
+        <section class="team">
+          <div class="container">
+              <h4>DELIVERY TEAM</h4>
+              <h1>Meet Out Delivery Team</h1>
+              <div class="grid-team">
+                  <article></article>
+                  <article></article>
+                  <article></article>
+                  <article></article>
+              </div>
+          </div>
+        </section>
     <section id="blog">
       <h2 class="section-title">Our Blog</h2>
       <h3 class="section-subtitle">Latest From Blog</h3>
@@ -127,7 +224,6 @@
       </div>
     </section>
   </main>
-
   <footer id="footer">
     <section class="footer-grid">
       <div class="section-footer">

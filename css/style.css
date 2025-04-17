@@ -13,13 +13,328 @@
   box-sizing: border-box;
 }
 
+.background img {
+  position: absolute;
+  width: 100%;
+  height: 52.2%;
+  object-fit: cover;
+  top: 0;
+  left: 0;
+  z-index: 0;
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 52.2%;
+    background: rgba(0, 0, 0, 0.829);
+    z-index: 1;
+}
+
 body {
   font-family: var(--font-family-poppins);
+}
+
+.banner-texto {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  text-align: center;
+  max-width: 600px;
+  margin: 0 auto;
+  z-index: 2;
 }
+
+.tracking-id {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 400px;
+  margin: 0 auto;
+  margin-top: 20px;
+}
+
+.tracking-id button {
+  padding: 12.5px 30px;
+  width: 60%;
+  background-color: var(--primary);
+  color: white;
+  border: none;
+}
+
+.tracking-id input {
+  padding: 12.4px 30px;
+  border: none;
+  width: 100%;
+}
+
+.banner-texto, .tracking-id {
+  position: relative;
+  z-index: 2;
+}
+
+.banner-texto h4 {
+  font-size: 2rem;
+  color: var(--primary);
+}
+
+.banner-texto h1 {
+  font-size: 4rem;
+  color: var(--secondary);
+  width: 100%;
+}
+
+.container p {
+  font-size: 1rem;
+  color: gray;
+}
+
+.container h4{
+  font-size: 1rem;
+  color: var(--primary);
+}
+
+.container h1 {
+  font-size: 2.3rem;
+  color: var(--dark);
+}
+
+.quote {
+  margin-top: 0px;
+  margin-left: 0px;
+  position: relative;
+  margin-top: 230px;
+}
+
+.quote-form{
+  max-width: 620px;
+  position: relative;
+}
+
+.quote-form p{
+  font-size: 1rem;
+  color: var(--dark);
+}
+
+.quote-info {
+  display: flex;
+  text-align: center;
+  gap: 40px;
+}
+
+.quote-dados{
+  display: flex;
+  flex-direction: column;
+  width: 150px;
+}
+
+.quote-dados p{
+  max-width: 200px;
+}
+
+.quote-dados p{
+  font-size: 1rem;
+  color: var(--dark);
+}
+
+.quote-dados h1{
+  font-size: 2.3rem;
+  color: var(--primary);
+}
+
+.logo{
+  position: static;
+  margin-top: 4px;
+  margin-left: 50px;
+}
+
+.menu-lista {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  list-style: none;
+  max-width: 400px;
+  position: relative;
+}
+
+.preenchimento-form {
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
+}
+
+.preenchimento-form input, select, button{
+  border: none;
+  padding: 15px 80px 15px 80px;
+  margin-bottom: 15px;
+  font-family: var(--font-family-poppins);
+}
+
+.preenchimento-form button{
+  background-color: var(--dark);
+  color: var(--secondary);
+}
+
+.preenchimento-form :placeholder-shown {
+  text-align: left;
+}
+
+.pricing-plan {
+  margin-top: 50px;
+}
+
+.quote .container {
+  background-color: var(--secondary);
+}
+
+.formulario {
+  background-color: var(--primary);
+  padding: 80px 40px 80px 40px;
+  display: flex;
+}
+
+.grid-quote {
+  display: flex; /* Alinha os elementos lado a lado */
+  align-content: center;
+  flex-wrap: wrap; /* Adiciona espaço entre os elementos */
+  align-items: center; /* Alinha os itens no topo */
+  gap: 20px; /* Espaço entre o texto e o formulário */
+  justify-content: center;
+}
+
+
+.quote-form input,
+.quote-form select,
+.quote-form button {
+  width: 100%; /* Faz os campos ocuparem toda a largura */
+  padding: 10px;
+  font-size: 1rem;
+}
+
+.quote-form form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px; /* Espaço entre os campos do formulário */
+}
+
+.quote-form {
+  flex: 1; /* Faz o formulário ocupar o espaço disponível */
+  max-width: 500px; /* Limita a largura do formulário */
+}
+
+.quote-info {
+}
+
+.quote-texto {
+  flex: 1; /* Faz o texto ocupar o espaço disponível */
+}
+
+.quadro-form {
+  display: flex;
+  max-width: 400px;
+}
+.cabecalho {
+  background-color: var(--secondary);
+}
+
+.pricing-plan .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.preco {
+  max-height: 50px;
+}
+
+.preco p{
+  margin-top: 8px;
+  font-size: 1.1rem;
+}
+
+article.preco {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 15px;
+  margin-top: 10px;
+}
+
+.grid-precos {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  margin-top: 30px;
+}
+
+.plan-name h2 {
+  text-align: center;
+  justify-content: center;
+  padding: 10px;
+  background-color: var(--primary);
+}
+
+.plan-name p {
+  text-align: center;
+  justify-content: center;
+  padding: 10px;
+}
+
+.grid-precos h2 {
+  font-size: 1.5rem;
+  color: var(--dark);
+}
+
+.basic {
+  background-color: var(--secondary);
+}
+
+.premium {
+  background-color: var(--secondary);
+}
+
+.business {
+  background-color: var(--secondary);
+}
+
+.month {
+  text-align: center;
+  align-self: flex-end;
+}
+
+.grid-precos .btn{
+  display: flex;
+  background-color: var(--primary);
+  color: white;
+  padding: 10px 20px;
+  border-style: none;
+  margin: 0 auto;
+  margin-bottom: 12px;
+}
+
+.team .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.blog .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  }
+  
+/*=======*/
 
 .banner img {
   width: 100%;
@@ -56,6 +371,7 @@ body {
 .quote-dados {
   display: flex;
   flex-direction: column;
+
 }
 
 .quote-dados p {
@@ -205,6 +521,7 @@ body {
 /* Estilos do footer */
 
 #footer {
+  font-family: var(--font-family-poppins);
   background-color: var(--dark);
   color: white;
   font-size: 16px;
@@ -230,6 +547,17 @@ body {
 
 .quick-link i {
   font-size: 0.8rem;
+}
+
+.quick-link {
+  margin-bottom: 5px;
+  display: flex;
+  align-items: center;
+  gap: 3px;
+}
+
+.quick-link i {
+  font-size: .5rem;
 }
 
 .footer-grid {
@@ -272,6 +600,7 @@ body {
 
 .contact-icon {
   text-align: center;
+  font-size: .7rem;
   font-size: 1rem;
   padding-left: 3px;
 }
@@ -286,6 +615,7 @@ body {
   width: 20px;
   height: 20px;
   box-sizing: content-box;
+  padding: 2px;
   padding: 8px;
   color: white;
   text-decoration: none;
@@ -391,4 +721,7 @@ body {
   #footer button {
   font-size: 14px;
 }
+
+.preco {
+  display: flex;
 }
