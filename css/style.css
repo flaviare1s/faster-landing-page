@@ -12,9 +12,28 @@
   box-sizing: border-box;
 }
 
-.background {
-  z-index: -1;
+.background img {
   position: absolute;
+  width: 100%;
+  height: 52.2%;
+  object-fit: cover;
+  top: 0;
+  left: 0;
+  z-index: 0;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 52.2%;
+    background: rgba(0, 0, 0, 0.829);
+    z-index: 1;
+}
+
+body {
+  font-family: var(--font-family-poppins);
 }
 
 .banner-texto {
@@ -25,7 +44,7 @@
   text-align: center;
   max-width: 600px;
   margin: 0 auto;
-  z-index: 1;
+  z-index: 2;
 }
 
 .tracking-id {
@@ -34,12 +53,13 @@
   align-items: center;
   max-width: 400px;
   margin: 0 auto;
+  margin-top: 20px;
 }
 
 .tracking-id button {
-  padding: 0.4px 30px;
+  padding: 12.5px 30px;
+  width: 60%;
   background-color: var(--primary);
-  font-family: var(--font-family-poppins);
   color: white;
   border: none;
 }
@@ -50,39 +70,42 @@
   width: 100%;
 }
 
+.banner-texto, .tracking-id {
+  position: relative;
+  z-index: 2;
+}
+
 .banner-texto h4 {
-  font-family: var(--font-family-poppins);
   font-size: 2rem;
   color: var(--primary);
 }
 
 .banner-texto h1 {
-  font-family: var(--font-family-poppins);
-  font-size: 3rem;
+  font-size: 4rem;
   color: var(--secondary);
+  width: 100%;
 }
 
 .container p {
-  font-family: var(--font-family-poppins);
   font-size: 1rem;
   color: gray;
 }
 
 .container h4{
-  font-family: var(--font-family-poppins);
   font-size: 1rem;
   color: var(--primary);
 }
 
 .container h1 {
-  font-family: var(--font-family-poppins);
   font-size: 2.3rem;
   color: var(--dark);
 }
 
 .quote {
-  margin-top: 450px;
-  margin-left: 200px;
+  margin-top: 0px;
+  margin-left: 0px;
+  position: relative;
+  margin-top: 230px;
 }
 
 .quote-form{
@@ -91,36 +114,38 @@
 }
 
 .quote-form p{
-  font-family: var(--font-family-poppins);
   font-size: 1rem;
   color: var(--dark);
 }
 
-.grid-quote-dados{
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  max-width: 500px;
+.quote-info {
+  display: flex;
+  text-align: center;
+  gap: 40px;
 }
 
 .quote-dados{
   display: flex;
   flex-direction: column;
+  width: 150px;
 }
 
 .quote-dados p{
-  font-family: var(--font-family-poppins);
+  max-width: 200px;
+}
+
+.quote-dados p{
   font-size: 1rem;
   color: var(--dark);
 }
 
 .quote-dados h1{
-  font-family: var(--font-family-poppins);
   font-size: 2.3rem;
   color: var(--primary);
 }
 
 .logo{
-  position: absolute;
+  position: static;
   margin-top: 4px;
   margin-left: 50px;
 }
@@ -131,13 +156,79 @@
   justify-content: space-between;
   list-style: none;
   max-width: 400px;
-  position: absolute;
+  position: relative;
 }
 
 .preenchimento-form {
   display: flex;
   flex-direction: column;
   max-width: 400px;
+}
+
+.preenchimento-form input, select, button{
+  border: none;
+  padding: 15px 80px 15px 80px;
+  margin-bottom: 15px;
+  font-family: var(--font-family-poppins);
+}
+
+.preenchimento-form button{
+  background-color: var(--dark);
+  color: var(--secondary);
+}
+
+.preenchimento-form :placeholder-shown {
+  text-align: left;
+}
+
+.pricing-plan {
+  margin-top: 50px;
+}
+
+.quote .container {
+  background-color: var(--secondary);
+}
+
+.formulario {
+  background-color: var(--primary);
+  padding: 80px 40px 80px 40px;
+  display: flex;
+}
+
+.grid-quote {
+  display: flex; /* Alinha os elementos lado a lado */
+  align-content: center;
+  flex-wrap: wrap; /* Adiciona espaço entre os elementos */
+  align-items: center; /* Alinha os itens no topo */
+  gap: 20px; /* Espaço entre o texto e o formulário */
+  justify-content: center;
+}
+
+
+.quote-form input,
+.quote-form select,
+.quote-form button {
+  width: 100%; /* Faz os campos ocuparem toda a largura */
+  padding: 10px;
+  font-size: 1rem;
+}
+
+.quote-form form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px; /* Espaço entre os campos do formulário */
+}
+
+.quote-form {
+  flex: 1; /* Faz o formulário ocupar o espaço disponível */
+  max-width: 500px; /* Limita a largura do formulário */
+}
+
+.quote-info {
+}
+
+.quote-texto {
+  flex: 1; /* Faz o texto ocupar o espaço disponível */
 }
 
 .quadro-form {
@@ -194,7 +285,6 @@ article.preco {
 }
 
 .grid-precos h2 {
-  font-family: var(--font-family-poppins);
   font-size: 1.5rem;
   color: var(--dark);
 }
