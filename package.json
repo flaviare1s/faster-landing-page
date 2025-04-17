@@ -1,0 +1,15 @@
+{
+  "name": "faster-landing-page",
+  "version": "1.0.0",
+  "description": "Projeto de criação de landing page em grupo do curso Geração Tech",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^5.3.5"
+  }
+}
