@@ -45,13 +45,20 @@
   }
 
   #blog {
-    width: 100%;
     padding: 20px;
+  }
+
+  .blog-container {
+    width: 100%;
   }
 
   .blog-grid {
     grid-template-columns: 1fr;
     gap: 40px;
+  }
+
+  #footer {
+    padding: 0 20px;
   }
 
   .footer-grid {
