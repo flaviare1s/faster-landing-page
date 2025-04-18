@@ -54,6 +54,10 @@
     gap: 40px;
   }
 
+  #footer {
+    padding: 0 20px;
+  }
+
   .footer-grid {
     grid-template-columns: 1fr;
     padding: 40px 15px;

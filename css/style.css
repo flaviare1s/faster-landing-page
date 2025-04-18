@@ -531,6 +531,7 @@ article.preco {
   background-color: var(--dark);
   color: white;
   font-size: 16px;
+  width: 100vw;
 }
 
 .footer-title {
