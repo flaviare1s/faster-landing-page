@@ -197,7 +197,7 @@ body {
   margin-top: 50px;
 }
 
-.quote .container {
+.quote {
   background-color: var(--secondary);
 }
 
@@ -234,9 +234,6 @@ body {
 .quote-form {
   flex: 1; /* Faz o formulário ocupar o espaço disponível */
   max-width: 500px; /* Limita a largura do formulário */
-}
-
-.quote-info {
 }
 
 .quote-texto {
@@ -363,10 +360,17 @@ article.preco {
   color: var(--dark);
 }
 
+.grid-quote-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-width: 70%;
+  margin: 0 auto;
+}
+
 .grid-quote-dados {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  max-width: 500px;
+  display: flex;
 }
 
 .quote-dados {
