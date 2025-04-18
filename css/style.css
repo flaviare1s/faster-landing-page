@@ -97,6 +97,7 @@ body {
   box-sizing: content-box;
   font-family: var(--font-family-poppins);
   text-decoration: none;
+  margin-left: -5px;
 }
 
 .container p {
