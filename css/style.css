@@ -13,6 +13,11 @@
   box-sizing: border-box;
 }
 
+body {
+  font-family: var(--font-family-poppins);
+  overflow-x: hidden;
+}
+
 .banner {
   position: relative;
   height: 65vh;
@@ -32,10 +37,6 @@
     height: 100%;
     background: rgba(0, 0, 0, 0.8);
     z-index: 1;
-}
-
-body {
-  font-family: var(--font-family-poppins);
 }
 
 .banner-content {
@@ -314,15 +315,7 @@ article.preco {
   align-self: flex-end;
 }
 
-.grid-precos .btn{
-  display: flex;
-  background-color: var(--primary);
-  color: white;
-  padding: 10px 20px;
-  border-style: none;
-  margin: 0 auto;
-  margin-bottom: 12px;
-}
+
 
 .team .container {
   display: flex;
@@ -634,6 +627,7 @@ article.preco {
 }
 
 #footer input {
+  height: 60px;
   padding: 20px 30px;
   border: none;
   width: 100%;
@@ -645,7 +639,8 @@ article.preco {
 }
 
 #footer button {
-  padding: 20px;
+  height: 60px;
+  padding: 20px 0;
   width: 130px;
   background-color: var(--primary);
   color: white;
