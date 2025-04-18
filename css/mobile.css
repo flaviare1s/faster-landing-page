@@ -1,0 +1,62 @@
+@media screen and (max-width: 768px) {
+  .banner-content {
+    width: 90%;
+  }
+  
+  .banner-texto h1 {
+    font-size: 24px;
+    color: var(--primary);
+  }
+
+  .banner-texto h2 {
+    margin: 15px 0;
+    font-size: 32px;
+  }
+
+  .tracking-id {
+    margin-top: 5px;
+  }
+
+  .section-subtitle {
+    font-size: 30px;
+  }
+
+  #blog {
+    width: 100%;
+    padding: 20px;
+  }
+
+  .blog-grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .footer-grid {
+    grid-template-columns: 1fr;
+    padding: 40px 15px;
+  }
+
+  .copyright-section {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 30px 20px 50px;
+  }
+
+  .copyright p {
+    width: 100%;
+    text-align: center;
+  }
+
+  .footer-title {
+    margin-top: 20px;
+  }
+
+  #footer button {
+    font-size: 14px;
+  }
+
+  .preco {
+    display: flex;
+  }
+}

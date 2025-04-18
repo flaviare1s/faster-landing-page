@@ -8,6 +8,7 @@
     content="Landing page based on the Faster template by ThemeWagon, developed as a team project for the Geração Tech course.">
   <link rel="shortcut icon" href="favicon.png" type="image/x-icon" />
   <link rel="stylesheet" href="./css/style.css" />
+  <link rel="stylesheet" href="./css/mobile.css">
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link
@@ -18,36 +19,22 @@
 </head>
 <body>
     <header class="cabeçalho">
-        <div class="logo">
-            <img src="assets/img/logo.png" alt="">
-        </div>
-        <div class="menu">
-            <ul class="menu-lista">
-                <li>Home</li>
-                <li>About</li>
-                <li>Service</li>
-                <li>Price</li>
-                <li>Pages</li>
-                <li>Contact</li>
-            </ul>
-        </div>
-        <div>
-            <a href="#quote">Get A Quote</a>
-        </div>
+        <!-- Header aqui -->
     </header>
     <main>
         <section class="banner">
             <div class="background">
-                <img src="assets/img/header.jpg" alt="">
                 <div class="overlay"></div>
             </div>
-            <div class="banner-texto"> 
-                <h4><strong>Safe & Faster</strong></h4>
-                <h1><strong>Logistic Services</strong></h1>
-            </div>
-            <div class="tracking-id">
-                <input class="" type="text" placeholder="Tracking ID">
-                <button class="btn" type="button">Track & Trace</button>
+            <div class="banner-content">
+              <div class="banner-texto">
+                  <h1>Safe & Faster</h1>
+                  <h2>Logistics Services</h2>
+              </div>
+              <div class="tracking-id">
+                  <input type="text" placeholder="Tracking Id">
+                  <a href="#">Track & Trace</a>
+              </div>
             </div>
         </section>
         <section class="quote" id="quote">
@@ -55,8 +42,8 @@
             <div class="grid-quote">
               <div class="grid-quoteaa">
                 <div class="quote-texto">
-                  <h4>GET A QUOTE</h4>
-                  <h1><strong>Request A Free Quote</strong></h1>
+                  <h2 class="section-title">GET A QUOTE</h2>
+                  <h3 class="section-subtitle">Request A Free Quote</h3>
                   <article class="quote-form">
                       <p>Dolores lorem lorem ipsum sit et ipsum. Sadip sea amet diam dolore sed et. Sit rebum labore sit sit ut vero no sit. Et elitr stet dolor sed sit et sed ipsum et kasd ut. Erat duo eos et erat sed diam duo</p>
                   </article>
@@ -100,8 +87,8 @@
         </section>
         <section class="pricing-plan">
               <div class="container">
-                <h4>PRICING PLAN</h4>
-                <h1><strong>Affordable Pricing Packages</strong></h1>
+                <h2 class="section-title">PRICING PLAN</h2>
+                <h3 class="section-subtitle">Affordable Pricing Packages</h3>
                 <div class="grid-precos">
                   <div class="basic">
                     <article class="preco"><p>$</p><h1>49</h1><p class="month">/Mo</p></article>
@@ -159,6 +146,7 @@
               </div>
           </div>
         </section>
+
     <section id="blog">
       <h2 class="section-title">Our Blog</h2>
       <h3 class="section-subtitle">Latest From Blog</h3>
@@ -224,6 +212,7 @@
       </div>
     </section>
   </main>
+
   <footer id="footer">
     <section class="footer-grid">
       <div class="section-footer">
