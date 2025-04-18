@@ -45,8 +45,11 @@
   }
 
   #blog {
-    width: 100%;
     padding: 20px;
+  }
+
+  .blog-container {
+    width: 100%;
   }
 
   .blog-grid {
