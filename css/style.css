@@ -34,13 +34,13 @@ body {
 }
 
 .overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.8);
-    z-index: 1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  z-index: 1;
 }
 
 .banner-content {
@@ -104,7 +104,7 @@ body {
   color: gray;
 }
 
-.container h4{
+.container h4 {
   font-size: 1rem;
   color: var(--primary);
 }
@@ -121,12 +121,12 @@ body {
   margin-top: 230px;
 }
 
-.quote-form{
+.quote-form {
   max-width: 40%;
   position: relative;
 }
 
-.quote-form p{
+.quote-form p {
   font-size: 1rem;
   color: var(--dark);
 }
@@ -137,27 +137,27 @@ body {
   gap: 40px;
 }
 
-.quote-dados{
+.quote-dados {
   display: flex;
   flex-direction: column;
   max-width: 150px;
 }
 
-.quote-dados p{
+.quote-dados p {
   max-width: 200px;
 }
 
-.quote-dados p{
+.quote-dados p {
   font-size: 1rem;
   color: var(--dark);
 }
 
-.quote-dados h1{
+.quote-dados h1 {
   font-size: 2.3rem;
   color: var(--primary);
 }
 
-.logo{
+.logo {
   position: static;
   margin-top: 4px;
   margin-left: 50px;
@@ -177,14 +177,16 @@ body {
   max-width: 400px;
 }
 
-.preenchimento-form input, select, button{
+.preenchimento-form input,
+select,
+button {
   border: none;
   padding: 15px 80px 15px 80px;
   margin-bottom: 15px;
   font-family: var(--font-family-poppins);
 }
 
-.preenchimento-form button{
+.preenchimento-form button {
   background-color: var(--dark);
   color: var(--secondary);
 }
@@ -210,12 +212,17 @@ body {
 .grid-quote {
   display: flex; /* Alinha os elementos lado a lado */
   align-content: center;
-  flex-wrap: wrap; /* Adiciona espaço entre os elementos */
   align-items: center; /* Alinha os itens no topo */
   gap: 20px; /* Espaço entre o texto e o formulário */
   justify-content: center;
 }
 
+.grid-quoteaa {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+}
 
 .quote-form input,
 .quote-form select,
@@ -231,13 +238,11 @@ body {
   gap: 10px; /* Espaço entre os campos do formulário */
 }
 
-.quote-form {
-  flex: 1; /* Faz o formulário ocupar o espaço disponível */
-  max-width: 500px; /* Limita a largura do formulário */
-}
-
 .quote-texto {
-  flex: 1; /* Faz o texto ocupar o espaço disponível */
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
 }
 
 .quadro-form {
@@ -261,7 +266,7 @@ body {
   max-height: 50px;
 }
 
-.preco p{
+.preco p {
   margin-top: 8px;
   font-size: 1.1rem;
 }
@@ -315,8 +320,6 @@ article.preco {
   align-self: flex-end;
 }
 
-
-
 .team .container {
   display: flex;
   flex-direction: column;
@@ -333,8 +336,8 @@ article.preco {
   justify-content: center;
   max-width: 70%;
   margin: 0 auto;
-  }
-  
+}
+
 /*=======*/
 
 .banner img {
@@ -352,7 +355,6 @@ article.preco {
   font-size: 2.3rem;
   color: var(--dark);
 }
-
 
 .quote-form p {
   font-family: var(--font-family-poppins);
@@ -376,7 +378,6 @@ article.preco {
 .quote-dados {
   display: flex;
   flex-direction: column;
-
 }
 
 .quote-dados p {
@@ -562,7 +563,7 @@ article.preco {
 }
 
 .quick-link i {
-  font-size: .5rem;
+  font-size: 0.5rem;
 }
 
 .footer-grid {
@@ -605,7 +606,7 @@ article.preco {
 
 .contact-icon {
   text-align: center;
-  font-size: .7rem;
+  font-size: 0.7rem;
   font-size: 1rem;
   padding-left: 3px;
 }

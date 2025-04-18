@@ -2,7 +2,7 @@
   .banner-content {
     width: 90%;
   }
-  
+
   .banner-texto h1 {
     font-size: 24px;
     color: var(--primary);
@@ -19,6 +19,22 @@
 
   .section-subtitle {
     font-size: 30px;
+  }
+
+  .quote {
+    padding-top: 44px;
+  }
+
+  .quote-texto {
+    margin-bottom: 20px;
+  }
+
+  .grid-quote {
+    flex-direction: column;
+  }
+
+  .grid-quoteaa {
+    width: 90%;
   }
 
   .grid-precos {
