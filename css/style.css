@@ -15,6 +15,9 @@
 
 body {
   font-family: var(--font-family-poppins);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   overflow-x: hidden;
 }
 
@@ -118,7 +121,7 @@ body {
 }
 
 .quote-form{
-  max-width: 620px;
+  max-width: 40%;
   position: relative;
 }
 
@@ -136,7 +139,7 @@ body {
 .quote-dados{
   display: flex;
   flex-direction: column;
-  width: 150px;
+  max-width: 150px;
 }
 
 .quote-dados p{
@@ -164,7 +167,6 @@ body {
   flex-direction: row;
   justify-content: space-between;
   list-style: none;
-  max-width: 400px;
   position: relative;
 }
 
@@ -253,7 +255,7 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  max-width: 1200px;
+  max-width: 70%;
   margin: 0 auto;
 }
 
@@ -322,7 +324,7 @@ article.preco {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  max-width: 1200px;
+  max-width: 70%;
   margin: 0 auto;
 }
 
@@ -331,7 +333,7 @@ article.preco {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  max-width: 1200px;
+  max-width: 70%;
   margin: 0 auto;
   }
   
@@ -353,9 +355,6 @@ article.preco {
   color: var(--dark);
 }
 
-.quote-form {
-  max-width: 650px;
-}
 
 .quote-form p {
   font-family: var(--font-family-poppins);
