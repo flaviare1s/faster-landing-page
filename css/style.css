@@ -29,6 +29,10 @@ main {
   justify-content: center;
 }
 
+.background {
+  width: 100vw;
+}
+
 .banner {
   position: relative;
   height: 65vh;
@@ -38,6 +42,7 @@ main {
   justify-content: center;
   align-items: center;
   text-align: center;
+  
 }
 
 .overlay {
