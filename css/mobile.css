@@ -44,6 +44,10 @@
     margin-top: 30px;
   }
 
+  .grid-team  {
+    grid-template-columns: 1fr;
+  }
+
   #blog {
     padding: 20px;
   }
@@ -88,5 +92,11 @@
 
   .preco {
     display: flex;
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1023px) {
+  .grid-team  {
+    grid-template-columns: 1fr 1fr;
   }
 }
