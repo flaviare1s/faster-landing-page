@@ -33,8 +33,24 @@
     flex-direction: column;
   }
 
-  .grid-quoteaa {
-    width: 90%;
+  .grid-quote-content {
+    width: 80%;
+  }
+
+  .grid-quote-dados {
+  flex-direction: column;
+  } 
+
+
+  .quote-dados .quote-number {
+    font-size: 2rem;
+  }
+
+
+  .formulario {
+    min-width: 300px;
+    width: 80%;
+    margin-top: 30px;
   }
 
   .grid-precos {
@@ -96,7 +112,50 @@
 }
 
 @media screen and (min-width: 769px) and (max-width: 1023px) {
+    .grid-quote {
+    flex-direction: column;
+  }
+
   .grid-team  {
     grid-template-columns: 1fr 1fr;
+  }
+
+   .grid-quote-content {
+    width: 70%;
+    margin-top: 30px;
+  }
+
+
+  #footer {
+    padding: 0 20px;
+  }
+
+  .footer-grid {
+    grid-template-columns: 1fr;
+    padding: 40px 15px;
+  }
+
+  .copyright-section {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 30px 20px 50px;
+  }
+
+  .copyright p {
+    width: 100%;
+    text-align: center;
+  }
+
+  .footer-title {
+    margin-top: 20px;
+  }
+
+  #footer button {
+    font-size: 14px;
+  }
+
+  .preco {
+    display: flex;
   }
 }

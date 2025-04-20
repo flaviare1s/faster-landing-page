@@ -7,11 +7,15 @@
   --font-family-poppins: "Poppins", sans-serif;
 }
 
+/* Reset */
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
+
+/* Global */
 
 body {
   font-family: var(--font-family-poppins);
@@ -28,6 +32,24 @@ main {
   align-items: center;
   justify-content: center;
 }
+
+.section-title {
+  color: var(--primary);
+  font-size: 16px;
+  text-transform: uppercase;
+}
+
+.section-subtitle {
+  color: var(--dark);
+  font-size: 40px;
+  font-weight: 800;
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+/* Header */
+
+/* Banner */
 
 .background {
   width: 100vw;
@@ -93,6 +115,7 @@ main {
   width: 100%;
   padding: 0 30px;
   font-family: var(--font-family-poppins);
+  font-size: 16px;
 }
 
 .tracking-id a {
@@ -112,114 +135,14 @@ main {
   margin-left: -5px;
 }
 
-.container p {
-  font-size: 1rem;
-  color: gray;
-}
-
-.container h4 {
-  font-size: 1rem;
-  color: var(--primary);
-}
-
-.container h1 {
-  font-size: 2.3rem;
-  color: var(--dark);
-}
+/* Get a Quote */
 
 .quote {
+  background-color: var(--secondary);
   margin-top: 0px;
   margin-left: 0px;
   position: relative;
   margin-top: 40px;
-}
-
-.quote-form {
-  max-width: 40%;
-  position: relative;
-}
-
-.quote-form p {
-  font-size: 1rem;
-  color: var(--dark);
-}
-
-.quote-info {
-  display: flex;
-  text-align: center;
-  gap: 40px;
-}
-
-.quote-dados {
-  display: flex;
-  flex-direction: column;
-  max-width: 150px;
-}
-
-.quote-dados p {
-  max-width: 200px;
-}
-
-.quote-dados p {
-  font-size: 1rem;
-  color: var(--dark);
-}
-
-.quote-dados h1 {
-  font-size: 2.3rem;
-  color: var(--primary);
-}
-
-.logo {
-  position: static;
-  margin-top: 4px;
-  margin-left: 50px;
-}
-
-.menu-lista {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  list-style: none;
-  position: relative;
-}
-
-.preenchimento-form {
-  display: flex;
-  flex-direction: column;
-  max-width: 400px;
-}
-
-.preenchimento-form input,
-select,
-button {
-  border: none;
-  padding: 15px 80px 15px 80px;
-  margin-bottom: 15px;
-  font-family: var(--font-family-poppins);
-}
-
-.preenchimento-form button {
-  background-color: var(--dark);
-  color: var(--secondary);
-}
-
-.preenchimento-form :placeholder-shown {
-  text-align: left;
-}
-
-.pricing-plan {
-  margin-top: 50px;
-}
-
-.quote {
-  background-color: var(--secondary);
-}
-
-.formulario {
-  background-color: var(--primary);
-  padding: 80px 40px 80px 40px;
-  display: flex;
 }
 
 .grid-quote {
@@ -230,25 +153,69 @@ button {
   justify-content: center;
 }
 
-.grid-quoteaa {
+.grid-quote-content {
   width: 40%;
   display: flex;
   flex-direction: column;
   align-content: center;
 }
 
-.quote-form input,
-.quote-form select,
-.quote-form button {
-  width: 100%; /* Faz os campos ocuparem toda a largura */
-  padding: 10px;
-  font-size: 1rem;
+.quote-info {
+  display: flex;
+  text-align: center;
+  gap: 40px;
 }
 
-.quote-form form {
+.grid-quote-dados {
+  display: flex;
+  margin-top: 20px;
+} 
+
+.quote-dados {
   display: flex;
   flex-direction: column;
-  gap: 10px; /* Espaço entre os campos do formulário */
+  max-width: 150px;
+}
+
+.quote-dados .quote-number {
+  font-size: 2.5rem;
+  color: var(--primary);
+  font-weight: 800;
+}
+
+.quote-dados .quote-text {
+  font-size: 1rem;
+  color: var(--dark);
+  font-weight: 700;
+}
+
+.formulario {
+  background-color: var(--primary);
+  padding: 90px 45px;
+  display: flex;
+  flex-direction: column;
+  min-width: 450px;
+}
+
+.preenchimento-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.preenchimento-form input,
+select,
+button {
+  border: none;
+  padding: 12px 80px;
+  margin-bottom: 15px;
+  font-family: var(--font-family-poppins);
+  font-size: 16px;
+  color: var(--gray);
+}
+
+.preenchimento-form button {
+  background-color: var(--dark);
+  color: var(--secondary);
 }
 
 .quote-texto {
@@ -258,83 +225,11 @@ button {
   justify-content: center;
 }
 
-.quadro-form {
-  display: flex;
-  max-width: 400px;
-}
-.cabecalho {
-  background-color: var(--secondary);
-}
-
-/* Estilos do 'Get a Quote' */
-/* .container h4 {
-  font-family: var(--font-family-poppins);
-  font-size: 1rem;
-  color: var(--primary);
-} */
-
-/* .container h1 {
-  font-family: var(--font-family-poppins);
-  font-size: 2.3rem;
-  color: var(--dark);
-} */
-
-.grid-quote-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  max-width: 70%;
-  margin: 0 auto;
-}
-
-.grid-quote p {
-  color: var(--gray);
-  text-align: left;
-}
-
-.grid-quote-dados {
-  display: flex;
-} 
-
-.quote-dados {
-  display: flex;
-  flex-direction: column;
-  max-width: 250px;
-}
-
-.quote-dados h1 {
-  font-family: var(--font-family-poppins);
-  font-size: 2.3rem;
-  color: var(--primary);
-  text-align: left;
-  line-height: 1.2;
-  margin-top: 20px;
-}
-
-.quote-dados p {
-  font-family: var(--font-family-poppins);
-  font-size: 1rem;
-  color: var(--dark);
-}
-
-/* .quote-form p {
-  font-family: var(--font-family-poppins);
-  font-size: 1rem;
-  color: var(--dark);
-} */
-
-.preenchimento-form input {
+.preenchimento-form input, select {
   text-align:left;
   padding-left: 25px;
   color: var(--gray); 
   font-family: var(--font-family-poppins); 
-}
-
-.preenchimento-form select {
-text-align: left;
-  padding-left: 25px;
-  font-family: var(--font-family-poppins);
 }
 
 .preenchimento-form .btn {
@@ -344,7 +239,17 @@ text-align: left;
   cursor: pointer; 
 }
 
-/*Estilos do 'Pricing Plan'*/
+/* Pricing Plan */
+
+.container p {
+  font-size: 1rem;
+  color: gray;
+}
+
+.pricing-plan {
+  margin-top: 50px;
+}
+
 
 .pricing-plan .container {
   display: flex;
@@ -425,7 +330,7 @@ article.preco {
   margin-top: 10px; 
 }
 
-/* Estilos do 'Delivery Team' */
+/* Delivery Team */
 
 #team {
   width: 100vw;
@@ -482,7 +387,7 @@ max-width: 225px;
   text-align: center;
 }
 
-/* Estilos do blog */
+/* Blog */
 
 #blog {
   width: 100vw;
@@ -500,20 +405,6 @@ max-width: 225px;
   margin: auto;
   width: 70%;
   padding: 60px 0px;
-}
-
-.section-title {
-  color: var(--primary);
-  font-size: 16px;
-  text-transform: uppercase;
-}
-
-.section-subtitle {
-  color: var(--dark);
-  font-size: 40px;
-  font-weight: 800;
-  text-align: center;
-  margin-bottom: 24px;
 }
 
 .blog-grid {
@@ -622,7 +513,7 @@ max-width: 225px;
   margin-top: -7px;
 }
 
-/* Estilos do footer */
+/* Footer */
 
 #footer {
   font-family: var(--font-family-poppins);
