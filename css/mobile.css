@@ -68,7 +68,7 @@
   }
 
   .preco-card {
-    min-width: 340px;
+    min-width: 380px;
   }
 
   #team {
@@ -80,7 +80,7 @@
   }
 
   .team-card {
-    min-width: 340px;
+    min-width: 380px;
   }
 
   .team-container .section-subtitle {
@@ -97,7 +97,7 @@
   }
 
   .blog-card {
-    min-width: 340px;
+    width: 380px;
   }
 
   #footer {
@@ -209,7 +209,7 @@
   }
 
   .preco-card {
-    min-width: 380px;
+    min-width: 400px;
   }
 
   #team {
@@ -222,7 +222,7 @@
 
   .team-card {  
     width: 100%;
-    min-width: 380px;
+    min-width: 400px;
   }
 
   #blog {
@@ -236,6 +236,10 @@
   .blog-grid {
     grid-template-columns: 1fr;
     gap: 40px;
+  }
+
+  .blog-card {
+    width: 400px;
   }
 
   #footer {
