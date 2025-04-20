@@ -258,7 +258,7 @@ select {
 
 .preco-card {
   background-color: var(--secondary);
-  width: 100%;
+  min-width: 360px;
 }
 
 .preco {
