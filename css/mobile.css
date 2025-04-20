@@ -1,6 +1,7 @@
 @media screen and (max-width: 768px) {
   .banner-content {
     width: 90%;
+    padding: 0 30px;
   }
 
   .banner-texto h1 {
@@ -21,8 +22,8 @@
     font-size: 30px;
   }
 
-  .quote {
-    padding-top: 44px;
+  #quote {
+    padding: 40px;
   }
 
   .quote-texto {
@@ -46,16 +47,23 @@
     font-size: 2rem;
   }
 
-
   .formulario {
     min-width: 300px;
     width: 80%;
     margin-top: 30px;
   }
 
+  #pricing-plan {
+    padding: 0 40px;
+  }
+
   .grid-precos {
     grid-template-columns: 1fr;
     margin-top: 30px;
+  }
+
+  #team {
+    padding: 0 40px;
   }
 
   .grid-team  {
@@ -68,7 +76,7 @@
   }
 
   #blog {
-    padding: 20px;
+    padding: 0 40px;
   }
 
   .blog-container {
@@ -81,7 +89,7 @@
   }
 
   #footer {
-    padding: 0 20px;
+    padding: 0 40px;
   }
 
   .footer-grid {
