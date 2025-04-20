@@ -1,6 +1,6 @@
 @media screen and (max-width: 450px) {
   .banner-content {
-    width: 300px;
+    width: 350px;
   }
 
   .background {
@@ -141,7 +141,7 @@
   }
 
   .banner-content {
-    width: 90%;
+    width: 400px;
   }
 
   .banner-texto h1 {
