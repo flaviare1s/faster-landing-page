@@ -19,7 +19,7 @@
 </head>
 
 <body>
-  <header class="cabeçalho">
+  <header id="header">
     <!-- Header aqui -->
   </header>
   <main>
@@ -41,7 +41,7 @@
 
     <section class="quote" id="quote">
       <div class="grid-quote">
-        <div class="grid-quoteaa">
+        <div class="grid-quote-content">
           <div class="quote-texto">
             <h2 class="section-title">GET A QUOTE</h2>
             <h3 class="section-subtitle">Request A Free Quote</h3>
@@ -50,56 +50,53 @@
           </div>
           <div class="grid-quote-dados">
             <div class="quote-info">
-              <article class="quote-dados">
-                <h1>225</h1>
-                <p><strong>Skilled Experts</strong></p>
-              </article>
-              <article class="quote-dados">
-                <h1>1050</h1>
-                <p><strong>Happy Clients</strong></p>
-              </article>
-              <article class="quote-dados">
-                <h1>2500</h1>
-                <p><strong>Complete Projects</strong></p>
-              </article>
+              <div class="quote-dados">
+                <p class="quote-number">225</p>
+                <p class="quote-text">Skilled Experts</p>
+              </div>
+              <div class="quote-dados">
+                <p class="quote-number">1050</p>
+                <p class="quote-text">Happy Clients</p>
+              </div>
+              <div class="quote-dados">
+                <p class="quote-number">2500</p>
+                <p class="quote-text">Complete Projects</p>
+              </div>
             </div>
           </div>
         </div>
         <div class="formulario">
-          <article>
-            <form action="">
-              <div class="preenchimento-form">
-                <input type="text" placeholder="Your Name" required>
-                <input type="email" placeholder="Your Email" required>
-                <select name="select" required>
-                  <option value="base">Select A Service</option>
-                  <option value="valor1">a</option>
-                  <option value="valor2">b</option>
-                  <option value="valor3">c</option>
-                </select>
-                <button class="btn" type="submit">Get A Quote</button>
-              </div>
-            </form>
-          </article>
+          <form>
+            <div class="preenchimento-form">
+              <input type="text" placeholder="Your Name" required>
+              <input type="email" placeholder="Your Email" required>
+              <select name="select" required>
+                <option value="base">Select A Service</option>
+                <option value="valor1">Service 1</option>
+                <option value="valor2">Service 2</option>
+                <option value="valor3">Service 3</option>
+              </select>
+              <button class="btn" type="submit">Get A Quote</button>
+            </div>
+          </form>
         </div>
       </div>
     </section>
 
-    <section class="pricing-plan">
-      <div class="container">
-        <h2 class="section-title">PRICING PLAN</h2>
+    <section id="pricing-plan">
+ 
+        <h2 class="section-title">Pricing Plan</h2>
         <h3 class="section-subtitle">Affordable Pricing Packages</h3>
         <div class="grid-precos">
-          <div class="basic">
-            <article class="preco">
-              <p>$</p>
-              <h1>49</h1>
-              <p class="month">/Mo</p>
-            </article>
-            <div class="plan-name">
-              <h2>Basic</h2>
+          <div class="preco-card">
+            <div class="preco">
+              <sup>$</sup>
+              <p class="price">49<span class="month">/Mo</span></p>      
             </div>
             <div class="plan-name">
+              <h2 class="plan-category">Basic</h2>
+            </div>
+            <div class="plan-languages">
               <p>HTML5 & CSS3</p>
               <p>Bootstrap 4</p>
               <p>Responsive Layout</p>
@@ -107,16 +104,17 @@
             </div>
             <div><button class="btn">Order Now</button></div>
           </div>
-          <div class="premium">
-            <article class="preco">
-              <p>$</p>
-              <h1>99</h1>
-              <p class="month">/Mo</p>
-            </article>
-            <div class="plan-name">
-              <h2>Premium</h2>
+
+          <div class="preco-card">
+            <div class="preco">
+              <sup>$</sup>
+              <p class="price">99<span class="month">/Mo</span></p>
+              
             </div>
             <div class="plan-name">
+              <h2 class="plan-category">Premium</h2>
+            </div>
+            <div class="plan-languages">
               <p>HTML5 & CSS3</p>
               <p>Bootstrap 4</p>
               <p>Responsive Layout</p>
@@ -124,27 +122,24 @@
             </div>
             <div><button class="btn">Order Now</button></div>
           </div>
-          <div class="business">
-            <article class="preco">
-              <p>$</p>
-              <h1>149</h1>
-              <p class="month">/Mo</p>
-            </article>
-            <div class="plan-name">
-              <h2>Business</h2>
+
+          <div class="preco-card">
+            <div class="preco">
+              <sup>$</sup>
+              <p class="price">149<span class="month">/Mo</span></p>
             </div>
             <div class="plan-name">
+              <h2 class="plan-category">Business</h2>
+            </div>
+            <div class="plan-languages">
               <p>HTML5 & CSS3</p>
               <p>Bootstrap 4</p>
               <p>Responsive Layout</p>
               <p>Compatible With All Browsers</p>
             </div>
             <div><button class="btn">Order Now</button></div>
-          </div>
-          <div>
           </div>
         </div>
-      </div>
     </section>
     <section id="team">
       <div class="team-container">

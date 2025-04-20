@@ -7,11 +7,15 @@
   --font-family-poppins: "Poppins", sans-serif;
 }
 
+/* Reset */
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
+
+/* Global */
 
 body {
   font-family: var(--font-family-poppins);
@@ -22,21 +26,34 @@ body {
   overflow-x: hidden;
 }
 
-main {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+.section-title {
+  color: var(--primary);
+  font-size: 16px;
+  text-transform: uppercase;
 }
 
+.section-subtitle {
+  color: var(--dark);
+  font-size: 40px;
+  font-weight: 800;
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+/* Header */
+
+/* Banner */
+
 .background {
-  width: 100vw;
+  width: 100%;
 }
 
 .banner {
   position: relative;
-  height: 65vh;
+  height: 62vh;
   background-image: url("../assets/img/header.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -93,6 +110,7 @@ main {
   width: 100%;
   padding: 0 30px;
   font-family: var(--font-family-poppins);
+  font-size: 16px;
 }
 
 .tracking-id a {
@@ -112,114 +130,21 @@ main {
   margin-left: -5px;
 }
 
-.container p {
-  font-size: 1rem;
-  color: gray;
-}
+/* Get a Quote */
 
-.container h4 {
-  font-size: 1rem;
-  color: var(--primary);
-}
-
-.container h1 {
-  font-size: 2.3rem;
-  color: var(--dark);
-}
-
-.quote {
-  margin-top: 0px;
-  margin-left: 0px;
-  position: relative;
-  margin-top: 40px;
-}
-
-.quote-form {
-  max-width: 40%;
-  position: relative;
-}
-
-.quote-form p {
-  font-size: 1rem;
-  color: var(--dark);
-}
-
-.quote-info {
-  display: flex;
-  text-align: center;
-  gap: 40px;
-}
-
-.quote-dados {
+#quote {
   display: flex;
   flex-direction: column;
-  max-width: 150px;
-}
-
-.quote-dados p {
-  max-width: 200px;
-}
-
-.quote-dados p {
-  font-size: 1rem;
-  color: var(--dark);
-}
-
-.quote-dados h1 {
-  font-size: 2.3rem;
-  color: var(--primary);
-}
-
-.logo {
-  position: static;
-  margin-top: 4px;
-  margin-left: 50px;
-}
-
-.menu-lista {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  list-style: none;
-  position: relative;
-}
-
-.preenchimento-form {
-  display: flex;
-  flex-direction: column;
-  max-width: 400px;
-}
-
-.preenchimento-form input,
-select,
-button {
-  border: none;
-  padding: 15px 80px 15px 80px;
-  margin-bottom: 15px;
-  font-family: var(--font-family-poppins);
-}
-
-.preenchimento-form button {
-  background-color: var(--dark);
-  color: var(--secondary);
-}
-
-.preenchimento-form :placeholder-shown {
-  text-align: left;
-}
-
-.pricing-plan {
-  margin-top: 50px;
+  align-items: center;
+  justify-content: center;
 }
 
 .quote {
   background-color: var(--secondary);
-}
-
-.formulario {
-  background-color: var(--primary);
-  padding: 80px 40px 80px 40px;
-  display: flex;
+  margin-top: 0px;
+  margin-left: 0px;
+  position: relative;
+  margin-top: 40px;
 }
 
 .grid-quote {
@@ -230,25 +155,67 @@ button {
   justify-content: center;
 }
 
-.grid-quoteaa {
-  width: 40%;
+.grid-quote-content {
+  width: 40%; 
   display: flex;
   flex-direction: column;
   align-content: center;
 }
 
-.quote-form input,
-.quote-form select,
-.quote-form button {
-  width: 100%; /* Faz os campos ocuparem toda a largura */
-  padding: 10px;
-  font-size: 1rem;
+.quote-info {
+  display: flex;
+  text-align: center;
+  gap: 40px;
 }
 
-.quote-form form {
+.grid-quote-dados {
+  display: flex;
+  margin-top: 20px;
+} 
+
+.quote-dados {
   display: flex;
   flex-direction: column;
-  gap: 10px; /* Espaço entre os campos do formulário */
+}
+
+.quote-dados .quote-number {
+  font-size: 2.5rem;
+  color: var(--primary);
+  font-weight: 800;
+}
+
+.quote-dados .quote-text {
+  font-size: 1rem;
+  color: var(--dark);
+  font-weight: 700;
+}
+
+.formulario {
+  background-color: var(--primary);
+  padding: 90px 45px;
+  display: flex;
+  flex-direction: column;
+}
+
+.preenchimento-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.preenchimento-form input,
+select,
+button {
+  border: none;
+  padding: 12px 40px;
+  margin-bottom: 15px;
+  font-family: var(--font-family-poppins);
+  font-size: 16px;
+  color: var(--gray);
+}
+
+.preenchimento-form button {
+  background-color: var(--dark);
+  color: var(--secondary);
 }
 
 .quote-texto {
@@ -258,83 +225,10 @@ button {
   justify-content: center;
 }
 
-.quadro-form {
-  display: flex;
-  max-width: 400px;
-}
-.cabecalho {
-  background-color: var(--secondary);
-}
-
-/* Estilos do 'Get a Quote' */
-/* .container h4 {
-  font-family: var(--font-family-poppins);
-  font-size: 1rem;
-  color: var(--primary);
-} */
-
-/* .container h1 {
-  font-family: var(--font-family-poppins);
-  font-size: 2.3rem;
-  color: var(--dark);
-} */
-
-.grid-quote-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  max-width: 70%;
-  margin: 0 auto;
-}
-
-.grid-quote p {
-  color: var(--gray);
-  text-align: left;
-}
-
-.grid-quote-dados {
-  display: flex;
-} 
-
-.quote-dados {
-  display: flex;
-  flex-direction: column;
-  max-width: 250px;
-}
-
-.quote-dados h1 {
-  font-family: var(--font-family-poppins);
-  font-size: 2.3rem;
-  color: var(--primary);
-  text-align: left;
-  line-height: 1.2;
-  margin-top: 20px;
-}
-
-.quote-dados p {
-  font-family: var(--font-family-poppins);
-  font-size: 1rem;
-  color: var(--dark);
-}
-
-/* .quote-form p {
-  font-family: var(--font-family-poppins);
-  font-size: 1rem;
-  color: var(--dark);
-} */
-
-.preenchimento-form input {
-  text-align:left;
-  padding-left: 25px;
+.preenchimento-form input, select {
   color: var(--gray); 
   font-family: var(--font-family-poppins); 
-}
-
-.preenchimento-form select {
-text-align: left;
-  padding-left: 25px;
-  font-family: var(--font-family-poppins);
+  height: 58px;
 }
 
 .preenchimento-form .btn {
@@ -342,49 +236,76 @@ text-align: left;
   color: white;
   font-family: var(--font-family-poppins);
   cursor: pointer; 
+  height: 58px;
+  width: 100%;
 }
 
-/*Estilos do 'Pricing Plan'*/
+/* Pricing Plan */
 
-.pricing-plan .container {
+#pricing-plan {
+  margin-top: 80px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin: 0 auto;
-}
-
-.preco {
-  max-height: 50px;
-}
-
-.preco p {
-  margin-top: 8px;
-  font-size: 1.1rem;
-}
-
-article.preco {
-  display: flex;
-  justify-content: center;
-  margin-bottom: 15px;
-  margin-top: 10px;
 }
 
 .grid-precos {
   display: grid;
-  grid-template-columns: repeat(auto-fit, 300px);
+  grid-template-columns: repeat(3, 1fr);
   gap: 20px;
-  max-width: 1200px;
 }
 
-.plan-name h2 {
-  text-align: center;
+.preco-card {
+  background-color: var(--secondary);
+  width: 100%;
+}
+
+.preco {
+  display: flex;
+  align-items: center;
   justify-content: center;
   padding: 10px;
-  background-color: var(--primary);
 }
 
-.plan-name p {
+.preco .price {
+  color: var(--dark);
+  font-weight: 800;
+  font-size: 3.2rem;
+}
+
+sup {
+  font-size: 1.2rem;
+  color: var(--gray);
+  margin-top: -20px;
+}
+
+.month {
+  font-size: 1rem;
+  color: var(--gray);
+  font-weight: 500;
+}
+
+.plan-name {
+  background-color: var(--primary);
+  padding: 22px 0; 
+  text-align: center;
+}
+
+.plan-name .plan-category {
+  font-size: 28px;
+}
+
+.plan-languages {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  color: var(--gray);
+}
+
+.plan-languages p {
   text-align: center;
   justify-content: center;
   padding: 10px;
@@ -396,24 +317,7 @@ article.preco {
   color: var(--dark);
 }
 
-.basic {
-  background-color: var(--secondary);
-}
-
-.premium {
-  background-color: var(--secondary);
-}
-
-.business {
-  background-color: var(--secondary);
-}
-
-.month {
-  text-align: center;
-  align-self: flex-end;
-}
-
-.pricing-plan .btn {
+.btn {
   background-color: var(--primary);
   color: white;
   padding: 10px 20px;
@@ -425,10 +329,10 @@ article.preco {
   margin-top: 10px; 
 }
 
-/* Estilos do 'Delivery Team' */
+/* Delivery Team */
 
 #team {
-  width: 100vw;
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -452,7 +356,8 @@ article.preco {
   }
 
 .team-card {  
-max-width: 225px;
+  max-width: 260px;
+  width: 100%;
 }
 
 .team-card img {
@@ -482,10 +387,10 @@ max-width: 225px;
   text-align: center;
 }
 
-/* Estilos do blog */
+/* Blog */
 
 #blog {
-  width: 100vw;
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -500,20 +405,6 @@ max-width: 225px;
   margin: auto;
   width: 70%;
   padding: 60px 0px;
-}
-
-.section-title {
-  color: var(--primary);
-  font-size: 16px;
-  text-transform: uppercase;
-}
-
-.section-subtitle {
-  color: var(--dark);
-  font-size: 40px;
-  font-weight: 800;
-  text-align: center;
-  margin-bottom: 24px;
 }
 
 .blog-grid {
@@ -622,14 +513,14 @@ max-width: 225px;
   margin-top: -7px;
 }
 
-/* Estilos do footer */
+/* Footer */
 
 #footer {
   font-family: var(--font-family-poppins);
   background-color: var(--dark);
   color: white;
   font-size: 16px;
-  width: 100w;
+  width: 100%;
 }
 
 .footer-title {
