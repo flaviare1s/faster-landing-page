@@ -196,6 +196,10 @@
     margin-top: 30px;
   }
 
+  .preco-card {
+    min-width: 380px;
+  }
+
   #team {
     padding: 0 40px;
   }
@@ -206,6 +210,7 @@
 
   .team-card {  
     width: 100%;
+    min-width: 380px;
   }
 
   #blog {
