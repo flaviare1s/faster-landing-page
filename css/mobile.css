@@ -1,6 +1,21 @@
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 450px) {
+  main {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .section-subtitle {
+    font-size: 28px;
+    padding: 0 20px;
+  }
+
   .banner-content {
-    width: 90%;
+    width: 350px;
+  }
+
+  .background {
+    width: 100%;
   }
 
   .banner-texto h1 {
@@ -15,14 +30,16 @@
 
   .tracking-id {
     margin-top: 5px;
+    width: 100%;
   }
 
-  .section-subtitle {
-    font-size: 30px;
+  .tracking-id a {
+    font-size: 14px;
+    width: 150px;
   }
 
-  .quote {
-    padding-top: 44px;
+  #quote {
+    padding-top: 30px;
   }
 
   .quote-texto {
@@ -33,23 +50,171 @@
     flex-direction: column;
   }
 
-  .grid-quoteaa {
+  .grid-quote-content {
+    width: 80%;
+  }
+
+  .quote-info {
+    flex-direction: column;
+  }
+
+  .quote-dados .quote-number {
+    font-size: 2rem;
+  }
+
+  .formulario {
+    margin-top: 30px;
+    padding: 80px 20px;
     width: 90%;
   }
 
   .grid-precos {
-    display: grid;
     grid-template-columns: 1fr;
-    gap: 20px;
     margin-top: 30px;
   }
 
-  .grid-team  {
+  .preco-card {
+    min-width: 380px;
+  }
+
+  .grid-team {
     grid-template-columns: 1fr;
   }
 
+  .team-card {
+    min-width: 350px;
+  }
+
+  .team-container .section-subtitle {
+    padding: 0 29px;
+  }
+
   #blog {
-    padding: 20px;
+    padding: 0 10px;
+  }
+
+  .blog-grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .blog-card {
+    width: 380px;
+  }
+
+  .footer-grid {
+    grid-template-columns: 1fr;
+    padding: 40px 15px;
+  }
+
+  .newsletter {
+    width: 100%;
+  }
+
+  .copyright-section {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 30px;
+  }
+
+  .copyright p {
+    width: 100%;
+    text-align: center;
+  }
+
+  .footer-title {
+    margin-top: 20px;
+  }
+
+  #footer button {
+    font-size: 14px;
+  }
+}
+
+@media screen and (min-width: 451px) and (max-width: 768px) {
+  .background {
+    width: 100%;
+  }
+
+  .banner-content {
+    width: 400px;
+  }
+
+  .banner-texto h1 {
+    font-size: 24px;
+    color: var(--primary);
+  }
+
+  .banner-texto h2 {
+    margin: 15px 0;
+    font-size: 32px;
+  }
+
+  .tracking-id {
+    margin-top: 5px;
+    width: 100%;
+  }
+
+  .tracking-id a {
+    font-size: 14px;
+    width: 150px;
+  }
+
+  .section-subtitle {
+    font-size: 28px;
+  }
+
+  #quote {
+    padding: 40px;
+  }
+
+  .quote-texto {
+    margin-bottom: 20px;
+  }
+
+  .grid-quote {
+    flex-direction: column;
+  }
+
+  .grid-quote-content {
+    width: 80%;
+  }
+
+  .quote-info {
+    flex-direction: column;
+  }
+
+  .quote-dados .quote-number {
+    font-size: 2rem;
+  }
+
+  .formulario {
+    margin-top: 30px;
+    padding: 80px 20px;
+    width: 80%;
+  }
+
+  .grid-precos {
+    grid-template-columns: 1fr;
+    margin-top: 30px;
+  }
+
+  .preco-card {
+    min-width: 400px;
+  }
+
+  .grid-team {
+    grid-template-columns: 1fr;
+  }
+
+  .team-card {
+    width: 100%;
+    min-width: 400px;
+  }
+
+  #blog {
+    padding: 0 20px;
   }
 
   .blog-container {
@@ -61,8 +226,8 @@
     gap: 40px;
   }
 
-  #footer {
-    padding: 0 20px;
+  .blog-card {
+    width: 400px;
   }
 
   .footer-grid {
@@ -74,7 +239,59 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 20px 30px 20px 50px;
+    padding: 20px 30px;
+  }
+
+  .copyright p {
+    width: 100%;
+    text-align: center;
+  }
+
+  .footer-title {
+    margin-top: 20px;
+  }
+
+  #footer button {
+    font-size: 14px;
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1023px) {
+  .banner-texto h1 {
+    font-size: 32px;
+  }
+
+  .banner-texto h2 {
+    font-size: 50px;
+  }
+  .grid-quote {
+    flex-direction: column;
+  }
+
+  .grid-precos {
+    grid-template-columns: 1fr;
+    margin-top: 30px;
+  }
+
+  .grid-team {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .grid-quote-content {
+    width: 70%;
+    margin-top: 30px;
+  }
+
+  .footer-grid {
+    grid-template-columns: 1fr;
+    padding: 40px 15px;
+  }
+
+  .copyright-section {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 30px;
   }
 
   .copyright p {
@@ -95,8 +312,13 @@
   }
 }
 
-@media screen and (min-width: 769px) and (max-width: 1023px) {
-  .grid-team  {
+@media screen and (min-width: 1024px) and (max-width: 1400px) {
+  .grid-precos {
+    grid-template-columns: 1fr;
+    margin-top: 30px;
+  }
+
+  .grid-team {
     grid-template-columns: 1fr 1fr;
   }
 }
