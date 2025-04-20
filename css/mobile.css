@@ -1,8 +1,4 @@
 @media screen and (max-width: 768px) {
-  body {
-    overflow-x: hidden;
-  }
-
   .background {
   width: 100%;
   }
@@ -23,6 +19,12 @@
 
   .tracking-id {
     margin-top: 5px;
+    width: 100%;
+  }
+
+  .tracking-id a {
+    font-size: 14px;
+    width: 150px;
   }
 
   .section-subtitle {
@@ -55,8 +57,7 @@
   }
 
   .formulario {
-    min-width: 300px;
-    width: 100%;
+    width: 95%;
     margin-top: 30px;
     padding: 80px 20px;
   }
@@ -79,7 +80,6 @@
   }
 
   .team-card {  
-    min-width: 340px;
     width: 100%;
   }
 

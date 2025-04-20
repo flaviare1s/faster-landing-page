@@ -175,7 +175,6 @@ body {
 .quote-dados {
   display: flex;
   flex-direction: column;
-  max-width: 150px;
 }
 
 .quote-dados .quote-number {
@@ -261,7 +260,6 @@ button {
 .preco-card {
   background-color: var(--secondary);
   width: 100%;
-  min-width: 350px;
 }
 
 .preco {
@@ -359,7 +357,8 @@ sup {
   }
 
 .team-card {  
-max-width: 260px;
+  max-width: 260px;
+  width: 100%;
 }
 
 .team-card img {
