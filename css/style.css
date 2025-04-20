@@ -241,55 +241,70 @@ button {
 
 /* Pricing Plan */
 
-.container p {
-  font-size: 1rem;
-  color: gray;
-}
-
-.pricing-plan {
-  margin-top: 50px;
-}
-
-
-.pricing-plan .container {
+#pricing-plan {
+  margin-top: 80px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  margin: 0 auto;
-}
-
-.preco {
-  max-height: 50px;
-}
-
-.preco p {
-  margin-top: 8px;
-  font-size: 1.1rem;
-}
-
-article.preco {
-  display: flex;
-  justify-content: center;
-  margin-bottom: 15px;
-  margin-top: 10px;
 }
 
 .grid-precos {
   display: grid;
-  grid-template-columns: repeat(auto-fit, 300px);
+  grid-template-columns: repeat(3, 1fr);
   gap: 20px;
-  max-width: 1200px;
 }
 
-.plan-name h2 {
-  text-align: center;
+.preco-card {
+  background-color: var(--secondary);
+  width: 100%;
+  min-width: 350px;
+}
+
+.preco {
+  display: flex;
+  align-items: center;
   justify-content: center;
   padding: 10px;
-  background-color: var(--primary);
 }
 
-.plan-name p {
+.preco .price {
+  color: var(--dark);
+  font-weight: 800;
+  font-size: 3.2rem;
+}
+
+sup {
+  font-size: 1.2rem;
+  color: var(--gray);
+  margin-top: -20px;
+}
+
+.month {
+  font-size: 1rem;
+  color: var(--gray);
+  font-weight: 500;
+}
+
+.plan-name {
+  background-color: var(--primary);
+  padding: 22px 0; 
+  text-align: center;
+}
+
+.plan-name .plan-category {
+  font-size: 28px;
+}
+
+.plan-languages {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  color: var(--gray);
+}
+
+.plan-languages p {
   text-align: center;
   justify-content: center;
   padding: 10px;
@@ -301,24 +316,7 @@ article.preco {
   color: var(--dark);
 }
 
-.basic {
-  background-color: var(--secondary);
-}
-
-.premium {
-  background-color: var(--secondary);
-}
-
-.business {
-  background-color: var(--secondary);
-}
-
-.month {
-  text-align: center;
-  align-self: flex-end;
-}
-
-.pricing-plan .btn {
+.btn {
   background-color: var(--primary);
   color: white;
   padding: 10px 20px;
@@ -357,7 +355,7 @@ article.preco {
   }
 
 .team-card {  
-max-width: 225px;
+max-width: 260px;
 }
 
 .team-card img {
