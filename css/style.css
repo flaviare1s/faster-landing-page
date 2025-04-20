@@ -131,7 +131,7 @@ main {
   margin-top: 0px;
   margin-left: 0px;
   position: relative;
-  margin-top: 230px;
+  margin-top: 40px;
 }
 
 .quote-form {
@@ -266,12 +266,91 @@ button {
   background-color: var(--secondary);
 }
 
-.pricing-plan .container {
+/* Estilos do 'Get a Quote' */
+/* .container h4 {
+  font-family: var(--font-family-poppins);
+  font-size: 1rem;
+  color: var(--primary);
+} */
+
+/* .container h1 {
+  font-family: var(--font-family-poppins);
+  font-size: 2.3rem;
+  color: var(--dark);
+} */
+
+.grid-quote-container {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   max-width: 70%;
+  margin: 0 auto;
+}
+
+.grid-quote p {
+  color: var(--gray);
+  text-align: left;
+}
+
+.grid-quote-dados {
+  display: flex;
+} 
+
+.quote-dados {
+  display: flex;
+  flex-direction: column;
+  max-width: 250px;
+}
+
+.quote-dados h1 {
+  font-family: var(--font-family-poppins);
+  font-size: 2.3rem;
+  color: var(--primary);
+  text-align: left;
+  line-height: 1.2;
+  margin-top: 20px;
+}
+
+.quote-dados p {
+  font-family: var(--font-family-poppins);
+  font-size: 1rem;
+  color: var(--dark);
+}
+
+/* .quote-form p {
+  font-family: var(--font-family-poppins);
+  font-size: 1rem;
+  color: var(--dark);
+} */
+
+.preenchimento-form input {
+  text-align:left;
+  padding-left: 25px;
+  color: var(--gray); 
+  font-family: var(--font-family-poppins); 
+}
+
+.preenchimento-form select {
+text-align: left;
+  padding-left: 25px;
+  font-family: var(--font-family-poppins);
+}
+
+.preenchimento-form .btn {
+  background-color: var(--dark); 
+  color: white;
+  font-family: var(--font-family-poppins);
+  cursor: pointer; 
+}
+
+/*Estilos do 'Pricing Plan'*/
+
+.pricing-plan .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   margin: 0 auto;
 }
 
@@ -293,9 +372,9 @@ article.preco {
 
 .grid-precos {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(auto-fit, 300px);
   gap: 20px;
-  margin-top: 30px;
+  max-width: 1200px;
 }
 
 .plan-name h2 {
@@ -309,6 +388,7 @@ article.preco {
   text-align: center;
   justify-content: center;
   padding: 10px;
+  line-height: 1.2;
 }
 
 .grid-precos h2 {
@@ -333,57 +413,16 @@ article.preco {
   align-self: flex-end;
 }
 
-
-
-/*=======*/
-
-
-.container h4 {
-  font-family: var(--font-family-poppins);
-  font-size: 1rem;
-  color: var(--primary);
-}
-
-.container h1 {
-  font-family: var(--font-family-poppins);
-  font-size: 2.3rem;
-  color: var(--dark);
-}
-
-.quote-form p {
-  font-family: var(--font-family-poppins);
-  font-size: 1rem;
-  color: var(--dark);
-}
-
-.grid-quote-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  max-width: 70%;
+.pricing-plan .btn {
+  background-color: var(--primary);
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  display: block;
   margin: 0 auto;
-}
-
-.grid-quote-dados {
-  display: flex;
-}
-
-.quote-dados {
-  display: flex;
-  flex-direction: column;
-}
-
-.quote-dados p {
-  font-family: var(--font-family-poppins);
-  font-size: 1rem;
-  color: var(--dark);
-}
-
-.quote-dados h1 {
-  font-family: var(--font-family-poppins);
-  font-size: 2.3rem;
-  color: var(--primary);
+  margin-bottom: 20px;
+  margin-top: 10px; 
 }
 
 /* Estilos do 'Delivery Team' */
@@ -413,7 +452,7 @@ article.preco {
   }
 
 .team-card {  
-max-width: 250px;
+max-width: 225px;
 }
 
 .team-card img {
