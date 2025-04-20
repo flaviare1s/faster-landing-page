@@ -155,7 +155,7 @@ body {
 }
 
 .grid-quote-content {
-  width: 40%;
+  width: 40%; 
   display: flex;
   flex-direction: column;
   align-content: center;
@@ -194,7 +194,6 @@ body {
   padding: 90px 45px;
   display: flex;
   flex-direction: column;
- 
 }
 
 .preenchimento-form {
@@ -206,7 +205,7 @@ body {
 select,
 button {
   border: none;
-  padding: 12px 80px;
+  padding: 12px 40px;
   margin-bottom: 15px;
   font-family: var(--font-family-poppins);
   font-size: 16px;
@@ -226,10 +225,9 @@ button {
 }
 
 .preenchimento-form input, select {
-  text-align:left;
-  padding-left: 25px;
   color: var(--gray); 
   font-family: var(--font-family-poppins); 
+  height: 58px;
 }
 
 .preenchimento-form .btn {

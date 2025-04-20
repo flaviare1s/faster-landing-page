@@ -1,4 +1,129 @@
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 450px) {
+  .banner-content {
+    width: 300px;
+  }
+
+  .background {
+  width: 100%;
+  }
+
+  .banner-texto h1 {
+    font-size: 24px;
+    color: var(--primary);
+  }
+
+  .banner-texto h2 {
+    margin: 15px 0;
+    font-size: 32px;
+  }
+
+  .tracking-id {
+    margin-top: 5px;
+    width: 100%;
+  }
+
+  .tracking-id a {
+    font-size: 14px;
+    width: 150px;
+  }
+
+  .section-subtitle {
+    font-size: 28px;
+  }
+
+  .quote-texto {
+    margin-bottom: 20px;
+  }
+
+  .grid-quote {
+    flex-direction: column;
+  }
+
+  .grid-quote-content {
+    width: 80%;
+  }
+
+  .quote-info{
+  flex-direction: column;
+  } 
+
+
+  .quote-dados .quote-number {
+    font-size: 2rem;
+  }
+
+  .formulario {
+    margin-top: 30px;
+    padding: 80px 20px;
+    width: 90%;
+  }
+
+  #pricing-plan {
+    padding: 0 40px;
+  }
+
+  .grid-precos {
+    grid-template-columns: 1fr;
+    margin-top: 30px;
+  }
+
+  #team {
+    padding: 0 40px;
+  }
+
+  .grid-team  {
+    grid-template-columns: 1fr;
+  }
+
+  .team-container .section-subtitle {
+    padding: 0 29px;
+  }
+
+  #blog {
+    padding: 0 10px;
+  }
+
+  .blog-grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  #footer {
+    padding: 0 40px;
+  }
+
+  .footer-grid {
+    grid-template-columns: 1fr;
+    padding: 40px 15px;
+  }
+
+  .newsletter {
+    width: 100%;
+  }
+
+  .copyright-section {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 30px;
+  }
+
+  .copyright p {
+    width: 100%;
+    text-align: center;
+  }
+
+  .footer-title {
+    margin-top: 20px;
+  }
+
+  #footer button {
+    font-size: 14px;
+  }
+}
+
+@media screen and (min-width: 451px) and (max-width: 768px) {
+
   .background {
   width: 100%;
   }
@@ -47,7 +172,7 @@
     width: 80%;
   }
 
-  .grid-quote-dados {
+  .quote-info {
   flex-direction: column;
   } 
 
@@ -57,9 +182,9 @@
   }
 
   .formulario {
-    width: 95%;
     margin-top: 30px;
     padding: 80px 20px;
+    width: 80%;
   }
 
   #pricing-plan {
@@ -84,7 +209,7 @@
   }
 
   #blog {
-    padding: 0 40px;
+    padding: 0 20px;
   }
 
   .blog-container {
