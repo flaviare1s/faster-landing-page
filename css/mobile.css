@@ -7,7 +7,6 @@
   }
   .section-subtitle {
     font-size: 28px;
-    padding: 0 20px;
   }
 
   .banner-content {
@@ -51,11 +50,18 @@
   }
 
   .grid-quote-content {
-    width: 80%;
+    width: 90%;
+    justify-content: start;
+    align-items: start;
   }
 
   .quote-info {
     flex-direction: column;
+  }
+
+  .quote-dados {
+    justify-content: start;
+    align-items: start;
   }
 
   .quote-dados .quote-number {
@@ -178,11 +184,18 @@
   }
 
   .grid-quote-content {
-    width: 80%;
+    width: 95%;
+    justify-content: start;
+    align-items: start;
   }
 
   .quote-info {
     flex-direction: column;
+  }
+
+  .quote-dados {
+    justify-content: start;
+    align-items: start;
   }
 
   .quote-dados .quote-number {
