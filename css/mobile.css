@@ -67,12 +67,20 @@
     margin-top: 30px;
   }
 
+  .preco-card {
+    min-width: 340px;
+  }
+
   #team {
     padding: 0 40px;
   }
 
   .grid-team  {
     grid-template-columns: 1fr;
+  }
+
+  .team-card {
+    min-width: 340px;
   }
 
   .team-container .section-subtitle {
@@ -86,6 +94,10 @@
   .blog-grid {
     grid-template-columns: 1fr;
     gap: 40px;
+  }
+
+  .blog-card {
+    min-width: 340px;
   }
 
   #footer {
