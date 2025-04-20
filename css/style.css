@@ -158,7 +158,8 @@ body {
   width: 40%;
   display: flex;
   flex-direction: column;
-  align-content: center;
+  align-items: center;
+  justify-content: center;
 }
 
 .quote-info {
@@ -202,7 +203,8 @@ body {
 }
 
 .preenchimento-form input,
-select, button {
+select,
+button {
   border: none;
   padding: 12px 40px;
   margin-bottom: 15px;
@@ -247,6 +249,10 @@ select {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+}
+
+.padding {
+  padding: 0 20px;
 }
 
 .grid-precos {
