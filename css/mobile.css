@@ -101,7 +101,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 20px 30px 20px 50px;
+    padding: 20px 30px;
   }
 
   .copyright p {
@@ -151,7 +151,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 20px 30px 20px 50px;
+    padding: 20px 30px;
   }
 
   .copyright p {
