@@ -1,7 +1,14 @@
 @media screen and (max-width: 768px) {
+  body {
+    overflow-x: hidden;
+  }
+
+  .background {
+  width: 100%;
+  }
+
   .banner-content {
     width: 90%;
-    padding: 0 30px;
   }
 
   .banner-texto h1 {
@@ -19,7 +26,7 @@
   }
 
   .section-subtitle {
-    font-size: 30px;
+    font-size: 28px;
   }
 
   #quote {
@@ -49,8 +56,9 @@
 
   .formulario {
     min-width: 300px;
-    width: 80%;
+    width: 100%;
     margin-top: 30px;
+    padding: 80px 20px;
   }
 
   #pricing-plan {
@@ -71,7 +79,7 @@
   }
 
   .team-card {  
-    min-width: 350px;
+    min-width: 340px;
     width: 100%;
   }
 
@@ -119,6 +127,13 @@
 }
 
 @media screen and (min-width: 769px) and (max-width: 1023px) {
+  .banner-texto h1 {
+    font-size: 26px;
+  }
+
+  .banner-texto h2 {
+    font-size: 34px;
+  }
     .grid-quote {
     flex-direction: column;
   }
@@ -169,5 +184,16 @@
 
   .preco {
     display: flex;
+  }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1400px) {
+   .grid-precos {
+    grid-template-columns: 1fr;
+    margin-top: 30px;
+  }
+
+  .grid-team  {
+    grid-template-columns: 1fr 1fr;
   }
 }
