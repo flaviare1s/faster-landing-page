@@ -28,7 +28,7 @@ body {
 
 .section-title {
   color: var(--primary);
-  font-size: 16px;
+  font-size: 18px;
   text-transform: uppercase;
 }
 
@@ -59,7 +59,6 @@ body {
   justify-content: center;
   align-items: center;
   text-align: center;
-  
 }
 
 .overlay {
@@ -156,7 +155,7 @@ body {
 }
 
 .grid-quote-content {
-  width: 40%; 
+  width: 40%;
   display: flex;
   flex-direction: column;
   align-content: center;
@@ -171,7 +170,7 @@ body {
 .grid-quote-dados {
   display: flex;
   margin-top: 20px;
-} 
+}
 
 .quote-dados {
   display: flex;
@@ -225,17 +224,18 @@ button {
   justify-content: center;
 }
 
-.preenchimento-form input, select {
-  color: var(--gray); 
-  font-family: var(--font-family-poppins); 
+.preenchimento-form input,
+select {
+  color: var(--gray);
+  font-family: var(--font-family-poppins);
   height: 58px;
 }
 
 .preenchimento-form .btn {
-  background-color: var(--dark); 
+  background-color: var(--dark);
   color: white;
   font-family: var(--font-family-poppins);
-  cursor: pointer; 
+  cursor: pointer;
   height: 58px;
   width: 100%;
 }
@@ -288,7 +288,7 @@ sup {
 
 .plan-name {
   background-color: var(--primary);
-  padding: 22px 0; 
+  padding: 22px 0;
   text-align: center;
 }
 
@@ -326,7 +326,7 @@ sup {
   display: block;
   margin: 0 auto;
   margin-bottom: 20px;
-  margin-top: 10px; 
+  margin-top: 10px;
 }
 
 /* Delivery Team */
@@ -348,14 +348,14 @@ sup {
   margin: 0 auto;
 }
 
-.grid-team  {
+.grid-team {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 20px;
   margin: 0 auto;
-  }
+}
 
-.team-card {  
+.team-card {
   max-width: 260px;
   width: 100%;
 }
@@ -646,6 +646,7 @@ sup {
 
 #footer hr {
   border: 1px solid rgba(255, 255, 255, 0.219);
+  width: 100vw;
 }
 
 .copyright-link {

@@ -1,10 +1,20 @@
 @media screen and (max-width: 450px) {
+  main {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .section-subtitle {
+    font-size: 28px;
+  }
+
   .banner-content {
     width: 350px;
   }
 
   .background {
-  width: 100%;
+    width: 100%;
   }
 
   .banner-texto h1 {
@@ -27,10 +37,6 @@
     width: 150px;
   }
 
-  .section-subtitle {
-    font-size: 28px;
-  }
-
   .quote-texto {
     margin-bottom: 20px;
   }
@@ -43,10 +49,9 @@
     width: 80%;
   }
 
-  .quote-info{
-  flex-direction: column;
-  } 
-
+  .quote-info {
+    flex-direction: column;
+  }
 
   .quote-dados .quote-number {
     font-size: 2rem;
@@ -58,10 +63,6 @@
     width: 90%;
   }
 
-  #pricing-plan {
-    padding: 0 40px;
-  }
-
   .grid-precos {
     grid-template-columns: 1fr;
     margin-top: 30px;
@@ -71,16 +72,12 @@
     min-width: 380px;
   }
 
-  #team {
-    padding: 0 40px;
-  }
-
-  .grid-team  {
+  .grid-team {
     grid-template-columns: 1fr;
   }
 
   .team-card {
-    min-width: 380px;
+    min-width: 350px;
   }
 
   .team-container .section-subtitle {
@@ -98,10 +95,6 @@
 
   .blog-card {
     width: 380px;
-  }
-
-  #footer {
-    padding: 0 40px;
   }
 
   .footer-grid {
@@ -135,9 +128,8 @@
 }
 
 @media screen and (min-width: 451px) and (max-width: 768px) {
-
   .background {
-  width: 100%;
+    width: 100%;
   }
 
   .banner-content {
@@ -185,9 +177,8 @@
   }
 
   .quote-info {
-  flex-direction: column;
-  } 
-
+    flex-direction: column;
+  }
 
   .quote-dados .quote-number {
     font-size: 2rem;
@@ -199,10 +190,6 @@
     width: 80%;
   }
 
-  #pricing-plan {
-    padding: 0 40px;
-  }
-
   .grid-precos {
     grid-template-columns: 1fr;
     margin-top: 30px;
@@ -212,15 +199,11 @@
     min-width: 400px;
   }
 
-  #team {
-    padding: 0 40px;
-  }
-
-  .grid-team  {
+  .grid-team {
     grid-template-columns: 1fr;
   }
 
-  .team-card {  
+  .team-card {
     width: 100%;
     min-width: 400px;
   }
@@ -240,10 +223,6 @@
 
   .blog-card {
     width: 400px;
-  }
-
-  #footer {
-    padding: 0 40px;
   }
 
   .footer-grid {
@@ -280,27 +259,22 @@
   .banner-texto h2 {
     font-size: 50px;
   }
-    .grid-quote {
+  .grid-quote {
     flex-direction: column;
   }
 
-   .grid-precos {
+  .grid-precos {
     grid-template-columns: 1fr;
     margin-top: 30px;
   }
 
-  .grid-team  {
+  .grid-team {
     grid-template-columns: 1fr 1fr;
   }
 
-   .grid-quote-content {
+  .grid-quote-content {
     width: 70%;
     margin-top: 30px;
-  }
-
-
-  #footer {
-    padding: 0 20px;
   }
 
   .footer-grid {
@@ -334,12 +308,12 @@
 }
 
 @media screen and (min-width: 1024px) and (max-width: 1400px) {
-   .grid-precos {
+  .grid-precos {
     grid-template-columns: 1fr;
     margin-top: 30px;
   }
 
-  .grid-team  {
+  .grid-team {
     grid-template-columns: 1fr 1fr;
   }
 }
