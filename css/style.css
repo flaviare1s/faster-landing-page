@@ -41,6 +41,73 @@ body {
 }
 
 /* Header */
+.nav-header{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #fff;
+  height: 10vh;
+}
+
+.h1-header{
+  color: orangered;
+  position: relative;
+  margin-right: 100px;
+
+
+}
+
+
+.h1-header i{
+  top: 50%;
+  translate: -50%;
+}
+
+
+.btn-header{
+  color: #fff;
+  font-size: 16px;
+  background-color: orangered;
+  cursor: pointer;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  padding-bottom: 0.5rem;
+  padding-top: 0.5rem;
+  border: none;
+  margin-left: 100px;
+
+}
+
+.btn-header:hover{
+  background-color: rgba(22, 22, 22, 0.945);
+  transition: 0.4s;
+}
+
+.nav-list{
+  list-style: none;
+  display: flex;
+  outline: none;
+}
+
+.nav-list li{
+  letter-spacing: 3px;
+  margin-left: 20px;
+  margin-right: 50px;
+  top: 50%;
+  
+}
+.nav-list a {
+  text-decoration: none;
+  color: black;
+  font-weight: 600;
+  
+}
+.nav-list a:hover{
+  background-color: orangered;
+  padding: 26px 12px;
+   letter-spacing: 1px;
+  transition: 0.4s;
+}
 
 /* Banner */
 
