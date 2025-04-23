@@ -3,8 +3,16 @@
     display: none;
   }
 
-  .burguer-menu {
+  .burger-menu {
     display: block;
+  }
+
+  .nav-burger-menu {
+    display: none;
+  }
+
+  .active {
+    display: flex;
   }
 
   .logo img {
@@ -155,8 +163,12 @@
     display: none;
   }
 
-  .burguer-menu {
+  .burger-menu {
     display: block;
+  }
+
+  .active {
+    display: flex;
   }
 
   .logo img {
@@ -298,8 +310,12 @@
     display: none;
   }
 
-  .burguer-menu {
+  .burger-menu {
     display: block;
+  }
+
+  .active {
+    display: flex;
   }
 
   .banner-texto h1 {

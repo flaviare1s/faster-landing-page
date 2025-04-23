@@ -107,9 +107,51 @@ header {
   gap: 5px;
 }
 
-.burguer-menu {
+.burger-menu {
   display: none;
   font-size: 30px;
+  cursor: pointer;
+}
+
+.nav-burger-menu {
+  display: none;
+  flex-direction: column;
+  background-color: white;
+  width: 250px;
+  position: absolute;
+  z-index: 3;
+  right: 0;
+  top: 80px;
+
+}
+
+.nav-list-burger {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  outline: none;
+  justify-content: space-around;
+  align-items: center;
+  gap: 30px;
+}
+
+.nav-list-burger li{
+  letter-spacing: 3px;
+  width: 100%;
+}
+
+.nav-list-burger a {
+  display: inline-block;
+  text-decoration: none;
+  color: black;
+  font-weight: 600;
+  padding: 12px;
+  width: 100%;
+}
+
+.nav-list-burger a:hover{
+  background-color: var(--primary);
+  color: white;
 }
 
 /* Banner */
@@ -249,6 +291,7 @@ header {
 
 .quote-dados {
   display: flex;
+  text-align: left;
   flex-direction: column;
 }
 
