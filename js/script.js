@@ -39,6 +39,11 @@ window.addEventListener("DOMContentLoaded", animateNumbers);
 const menuIcon = document.getElementById('menu')
 const menuMobile = document.getElementById('menu-mobile')
 
-menuIcon.addEventListener('click', () => {
+menuIcon.addEventListener('click', (e) => {
+  e.stopPropagation()
   menuMobile.classList.toggle('active')
+})
+
+document.addEventListener('click', () => {
+  menuMobile.classList.remove('active')
 })
