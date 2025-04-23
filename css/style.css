@@ -107,6 +107,10 @@ header {
   letter-spacing: 1px;
 }
 
+.home-burguer {
+  color: white !important;
+}
+
 .nav-list .nav-link-header:hover {
   background-color: var(--primary);
   color: white;
