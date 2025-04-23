@@ -41,6 +41,118 @@ body {
 }
 
 /* Header */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 100px;
+  width: 85%;
+  height: 80px;
+}
+
+.nav-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff;
+  gap: 50px;
+}
+
+.btn-header{
+  color: #fff;
+  font-size: 16px;
+  background-color: orangered;
+  cursor: pointer;
+  padding-bottom: 0.5rem;
+  padding-top: 0.5rem;
+  border: none;
+}
+
+.btn-header:hover{
+  background-color: var(--dark);
+  transition: 0.4s;
+}
+
+.nav-list{
+  list-style: none;
+  display: flex;
+  outline: none;
+  justify-content: space-around;
+  align-items: center;
+  gap: 30px;
+}
+
+.nav-list li{
+  letter-spacing: 3px;
+  top: 50%;
+}
+
+.nav-list a {
+  text-decoration: none;
+  color: black;
+  font-weight: 600;
+}
+
+.nav-list a:hover{
+  background-color: var(--primary);
+  color: white;
+  padding: 26px 12px;
+  letter-spacing: 1px;
+  transition: 0.4s;
+}
+
+.dropdown-link {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.burger-menu {
+  display: none;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+.nav-burger-menu {
+  display: none;
+  flex-direction: column;
+  background-color: white;
+  width: 250px;
+  position: absolute;
+  z-index: 3;
+  right: 0;
+  top: 80px;
+
+}
+
+.nav-list-burger {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  outline: none;
+  justify-content: space-around;
+  align-items: center;
+  gap: 30px;
+}
+
+.nav-list-burger li{
+  letter-spacing: 3px;
+  width: 100%;
+}
+
+.nav-list-burger a {
+  display: inline-block;
+  text-decoration: none;
+  color: black;
+  font-weight: 600;
+  padding: 12px;
+  width: 100%;
+}
+
+.nav-list-burger a:hover{
+  background-color: var(--primary);
+  color: white;
+}
 
 /* Banner */
 
@@ -168,6 +280,10 @@ body {
   gap: 40px;
 }
 
+.quote-texto p {
+  color: var(--gray);
+}
+
 .grid-quote-dados {
   display: flex;
   margin-top: 20px;
@@ -175,6 +291,7 @@ body {
 
 .quote-dados {
   display: flex;
+  text-align: left;
   flex-direction: column;
 }
 

@@ -1,4 +1,24 @@
 @media screen and (max-width: 450px) {
+  .nav-header {
+    display: none;
+  }
+
+  .burger-menu {
+    display: block;
+  }
+
+  .nav-burger-menu {
+    display: none;
+  }
+
+  .active {
+    display: flex;
+  }
+
+  .logo img {
+    width: 150px;
+  }
+
   main {
     width: 100%;
     display: flex;
@@ -139,6 +159,22 @@
 }
 
 @media screen and (min-width: 451px) and (max-width: 768px) {
+  .nav-header {
+    display: none;
+  }
+
+  .burger-menu {
+    display: block;
+  }
+
+  .active {
+    display: flex;
+  }
+
+  .logo img {
+    width: 150px;
+  }
+
   .background {
     width: 100%;
   }
@@ -270,6 +306,18 @@
 }
 
 @media screen and (min-width: 769px) and (max-width: 1023px) {
+  .nav-header {
+    display: none;
+  }
+
+  .burger-menu {
+    display: block;
+  }
+
+  .active {
+    display: flex;
+  }
+
   .banner-texto h1 {
     font-size: 32px;
   }
@@ -322,16 +370,5 @@
 
   .preco {
     display: flex;
-  }
-}
-
-@media screen and (min-width: 1024px) and (max-width: 1400px) {
-  .grid-precos {
-    grid-template-columns: 1fr;
-    margin-top: 30px;
-  }
-
-  .grid-team {
-    grid-template-columns: 1fr 1fr;
   }
 }

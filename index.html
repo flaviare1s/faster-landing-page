@@ -14,6 +14,8 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
     rel="stylesheet">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
   <script src="https://kit.fontawesome.com/c78e85199e.js" crossorigin="anonymous"></script>
   <script src="./js/script.js" defer></script>
   <title>Faster</title>
@@ -21,8 +23,35 @@
 
 <body>
   <header id="header">
-    <!-- Header aqui -->
+    <div class="logo">
+      <img src="./assets/img/logo.png" alt="Logo">
+    </div>
+    <nav class="nav-header">
+      <ul class="nav-list">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="index.html">About</a></li>
+        <li><a href="index.html">Service</a></li>
+        <li> <a class="dropdown-link" href="index.html">Pages <i class="fa-solid fa-caret-down"></i></a></li>
+        <li><a href="index.html">Contact</a></li>
+      </ul>
+      <button type="submit" class="btn-header">Get a Quote</button>
+    </nav>
+
+    <div id="menu" class="burger-menu">
+      <i class="fa-solid fa-bars"></i>
+    </div>
+
+    <nav id="menu-mobile" class="nav-burger-menu">
+      <ul class="nav-list-burger">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="index.html">About</a></li>
+        <li><a href="index.html">Service</a></li>
+        <li> <a class="dropdown-link" href="index.html">Pages <i class="fa-solid fa-caret-down"></i></a></li>
+        <li><a href="index.html">Contact</a></li>
+      </ul>
+    </nav>
   </header>
+
   <main>
     <section class="banner">
       <div class="background">
@@ -47,7 +76,7 @@
             <h2 class="section-title">GET A QUOTE</h2>
             <h3 class="section-subtitle">Request A Free Quote</h3>
             <p>Dolores lorem lorem ipsum sit et ipsum. Sadip sea amet diam dolore sed et. Sit rebum labore sit sit ut
-            vero no sit. Et elitr stet dolor sed sit et sed ipsum et kasd ut. Erat duo eos et erat sed diam duo</p>
+              vero no sit. Et elitr stet dolor sed sit et sed ipsum et kasd ut. Erat duo eos et erat sed diam duo</p>
           </div>
           <div class="grid-quote-dados">
             <div class="quote-info">
@@ -85,62 +114,62 @@
     </section>
 
     <section id="pricing-plan">
- 
-        <h2 class="section-title">Pricing Plan</h2>
-        <h3 class="section-subtitle padding">Affordable Pricing Packages</h3>
-        <div class="grid-precos">
-          <div class="preco-card">
-            <div class="preco">
-              <sup>$</sup>
-              <p class="price">49<span class="month">/Mo</span></p>      
-            </div>
-            <div class="plan-name">
-              <h2 class="plan-category">Basic</h2>
-            </div>
-            <div class="plan-languages">
-              <p>HTML5 & CSS3</p>
-              <p>Bootstrap 4</p>
-              <p>Responsive Layout</p>
-              <p>Compatible With All Browsers</p>
-            </div>
-            <div><button class="btn">Order Now</button></div>
-          </div>
 
-          <div class="preco-card">
-            <div class="preco">
-              <sup>$</sup>
-              <p class="price">99<span class="month">/Mo</span></p>
-              
-            </div>
-            <div class="plan-name">
-              <h2 class="plan-category">Premium</h2>
-            </div>
-            <div class="plan-languages">
-              <p>HTML5 & CSS3</p>
-              <p>Bootstrap 4</p>
-              <p>Responsive Layout</p>
-              <p>Compatible With All Browsers</p>
-            </div>
-            <div><button class="btn">Order Now</button></div>
+      <h2 class="section-title">Pricing Plan</h2>
+      <h3 class="section-subtitle padding">Affordable Pricing Packages</h3>
+      <div class="grid-precos">
+        <div class="preco-card">
+          <div class="preco">
+            <sup>$</sup>
+            <p class="price">49<span class="month">/Mo</span></p>
           </div>
-
-          <div class="preco-card">
-            <div class="preco">
-              <sup>$</sup>
-              <p class="price">149<span class="month">/Mo</span></p>
-            </div>
-            <div class="plan-name">
-              <h2 class="plan-category">Business</h2>
-            </div>
-            <div class="plan-languages">
-              <p>HTML5 & CSS3</p>
-              <p>Bootstrap 4</p>
-              <p>Responsive Layout</p>
-              <p>Compatible With All Browsers</p>
-            </div>
-            <div><button class="btn">Order Now</button></div>
+          <div class="plan-name">
+            <h2 class="plan-category">Basic</h2>
           </div>
+          <div class="plan-languages">
+            <p>HTML5 & CSS3</p>
+            <p>Bootstrap 4</p>
+            <p>Responsive Layout</p>
+            <p>Compatible With All Browsers</p>
+          </div>
+          <div><button class="btn">Order Now</button></div>
         </div>
+
+        <div class="preco-card">
+          <div class="preco">
+            <sup>$</sup>
+            <p class="price">99<span class="month">/Mo</span></p>
+
+          </div>
+          <div class="plan-name">
+            <h2 class="plan-category">Premium</h2>
+          </div>
+          <div class="plan-languages">
+            <p>HTML5 & CSS3</p>
+            <p>Bootstrap 4</p>
+            <p>Responsive Layout</p>
+            <p>Compatible With All Browsers</p>
+          </div>
+          <div><button class="btn">Order Now</button></div>
+        </div>
+
+        <div class="preco-card">
+          <div class="preco">
+            <sup>$</sup>
+            <p class="price">149<span class="month">/Mo</span></p>
+          </div>
+          <div class="plan-name">
+            <h2 class="plan-category">Business</h2>
+          </div>
+          <div class="plan-languages">
+            <p>HTML5 & CSS3</p>
+            <p>Bootstrap 4</p>
+            <p>Responsive Layout</p>
+            <p>Compatible With All Browsers</p>
+          </div>
+          <div><button class="btn">Order Now</button></div>
+        </div>
+      </div>
     </section>
     <section id="team">
       <div class="team-container">
@@ -151,45 +180,45 @@
             <div class="team-img-container">
               <img class="team" src="./assets/img/team-1.jpg" alt="Foto de uma pessoa do time">
             </div>
-          
+
             <div class="team-info">
               <h4>Full name</h4>
               <p>Designation</p>
             </div>
           </div>
           <div class="team-card">
-          <div class="team-img-container">
-            <img class="team" src="./assets/img/team-2.jpg" alt="Foto de uma pessoa do time">
+            <div class="team-img-container">
+              <img class="team" src="./assets/img/team-2.jpg" alt="Foto de uma pessoa do time">
+            </div>
+
+            <div class="team-info">
+              <h4>Full name</h4>
+              <p>Designation</p>
+            </div>
           </div>
-          
-          <div class="team-info">
-            <h4>Full name</h4>
-            <p>Designation</p>
-          </div>
-        </div>
           <div class="team-card">
 
-          <div class="team-img-container">
-            <img class="team" src="./assets/img/team-3.jpg" alt="Foto de uma pessoa do time">
+            <div class="team-img-container">
+              <img class="team" src="./assets/img/team-3.jpg" alt="Foto de uma pessoa do time">
+            </div>
+
+            <div class="team-info">
+              <h4>Full name</h4>
+              <p>Designation</p>
+            </div>
           </div>
-          
-          <div class="team-info">
-            <h4>Full name</h4>
-            <p>Designation</p>
-          </div>
-        </div>
           <div class="team-card">
-          
-          <div class="team-img-container">
-            <img class="team" src="./assets/img/team-4.jpg" alt="Foto de uma pessoa do time">
-          </div>
-          
-          <div class="team-info">
-            <h4>Full name</h4>
-            <p>Designation</p>
+
+            <div class="team-img-container">
+              <img class="team" src="./assets/img/team-4.jpg" alt="Foto de uma pessoa do time">
+            </div>
+
+            <div class="team-info">
+              <h4>Full name</h4>
+              <p>Designation</p>
+            </div>
           </div>
         </div>
-      </div>
       </div>
     </section>
 
@@ -259,90 +288,90 @@
               </div>
             </div>
           </div>
-            </section>
-      </div>
-        <footer id="footer">
-          <section class="footer-grid">
-            <div class="section-footer">
-              <h2 class="footer-title">Get In Touch</h2>
-              <a href="https://www.google.com/maps/?entry=wc" target="_blank" class="touch-link">
-                <i class="fa-solid fa-location-dot"></i> 123 Street, New York, USA
-              </a>
-              <a href="tel:+551234567890" class="touch-link">
-                <i class="fa-solid fa-phone"></i> +012 345 67890
-              </a>
-              <a href="mailto:info@example.com" target="_blank" class="touch-link">
-                <i class="fa-solid fa-envelope"></i> info@example.com
-              </a>
-              <div class="contact-icons">
-                <a href="#" class="social-media-icon" target="_blank">
-                  <i class="fa-brands fa-twitter contact-icon"></i>
-                </a>
-                <a href="https://www.facebook.com" class="social-media-icon" target="_blank">
-                  <i class="fa-brands fa-facebook-f contact-icon"></i>
-                </a>
-                <a href="https://www.linkedin.com" class="social-media-icon" target="_blank">
-                  <i class="fa-brands fa-linkedin-in contact-icon"></i>
-                </a>
-                <a href="https://www.instagram.com" class="social-media-icon" target="_blank">
-                  <i class="fa-brands fa-instagram contact-icon"></i>
-                </a>
-              </div>
-            </div>
-            <div class="section-footer">
-              <h2 class="footer-title">Quick Links</h2>
-              <ul class="footer-list">
-                <li class="quick-link">
-                  <i class="fa-solid fa-angle-right"></i><a class="footer-link" href="#">Home</a>
-                </li>
-                <li class="quick-link">
-                  <i class="fa-solid fa-angle-right"></i><a class="footer-link" href="#">About Us</a>
-                </li>
-                <li class="quick-link">
-                  <i class="fa-solid fa-angle-right"></i><a class="footer-link" href="#">Our Services</a>
-                </li>
-                <li class="quick-link">
-                  <i class="fa-solid fa-angle-right"></i><a class="footer-link" href="#">Pricing Plan</a>
-                </li>
-                <li class="quick-link">
-                  <i class="fa-solid fa-angle-right"></i><a class="footer-link" href="#">Contact Us</a>
-                </li>
-              </ul>
-            </div>
-            <div class="section-footer">
-              <h2 class="footer-title">Newsletter</h2>
-              <p>
-                Rebum labore lorem dolores kasd est, et ipsum amet et at kasd, ipsum
-                sea tempor magna tempor. Accu kasd sed ea duo ipsum. Dolor duo
-                eirmod sea justo no lorem est diam
-              </p>
-              <form class="newsletter">
-                <input type="email" placeholder="Your Email Address" />
-                <button>Sign Up</button>
-              </form>
-            </div>
-          </section>
-          <hr>
-          <section class="copyright-section">
-            <div class="copyright">
-              <p>
-                © <a class="copyright-link" href="#">Your Site Name</a>. All Rights
-                Reserved. Designed by
-                <a href="https://htmlcodex.com/" target="_blank" class="copyright-link">HTML Codex</a>
-                Distributed By:
-                <a href="https://themewagon.com/" target="_blank" class="copyright-link">ThemeWagon</a>
-              </p>
-            </div>
-            <nav>
-              <ul class="copyright-list">
-                <li><a class="footer-link" href="#">Privacy</a></li>
-                <li><a class="footer-link" href="#">Terms</a></li>
-                <li><a class="footer-link" href="#">FAQs</a></li>
-                <li><a class="footer-link" href="#">Help</a></li>
-              </ul>
-            </nav>
-          </section>
-        </footer>
+    </section>
+    </div>
+    <footer id="footer">
+      <section class="footer-grid">
+        <div class="section-footer">
+          <h2 class="footer-title">Get In Touch</h2>
+          <a href="https://www.google.com/maps/?entry=wc" target="_blank" class="touch-link">
+            <i class="fa-solid fa-location-dot"></i> 123 Street, New York, USA
+          </a>
+          <a href="tel:+551234567890" class="touch-link">
+            <i class="fa-solid fa-phone"></i> +012 345 67890
+          </a>
+          <a href="mailto:info@example.com" target="_blank" class="touch-link">
+            <i class="fa-solid fa-envelope"></i> info@example.com
+          </a>
+          <div class="contact-icons">
+            <a href="#" class="social-media-icon" target="_blank">
+              <i class="fa-brands fa-twitter contact-icon"></i>
+            </a>
+            <a href="https://www.facebook.com" class="social-media-icon" target="_blank">
+              <i class="fa-brands fa-facebook-f contact-icon"></i>
+            </a>
+            <a href="https://www.linkedin.com" class="social-media-icon" target="_blank">
+              <i class="fa-brands fa-linkedin-in contact-icon"></i>
+            </a>
+            <a href="https://www.instagram.com" class="social-media-icon" target="_blank">
+              <i class="fa-brands fa-instagram contact-icon"></i>
+            </a>
+          </div>
+        </div>
+        <div class="section-footer">
+          <h2 class="footer-title">Quick Links</h2>
+          <ul class="footer-list">
+            <li class="quick-link">
+              <i class="fa-solid fa-angle-right"></i><a class="footer-link" href="#">Home</a>
+            </li>
+            <li class="quick-link">
+              <i class="fa-solid fa-angle-right"></i><a class="footer-link" href="#">About Us</a>
+            </li>
+            <li class="quick-link">
+              <i class="fa-solid fa-angle-right"></i><a class="footer-link" href="#">Our Services</a>
+            </li>
+            <li class="quick-link">
+              <i class="fa-solid fa-angle-right"></i><a class="footer-link" href="#">Pricing Plan</a>
+            </li>
+            <li class="quick-link">
+              <i class="fa-solid fa-angle-right"></i><a class="footer-link" href="#">Contact Us</a>
+            </li>
+          </ul>
+        </div>
+        <div class="section-footer">
+          <h2 class="footer-title">Newsletter</h2>
+          <p>
+            Rebum labore lorem dolores kasd est, et ipsum amet et at kasd, ipsum
+            sea tempor magna tempor. Accu kasd sed ea duo ipsum. Dolor duo
+            eirmod sea justo no lorem est diam
+          </p>
+          <form class="newsletter">
+            <input type="email" placeholder="Your Email Address" />
+            <button>Sign Up</button>
+          </form>
+        </div>
+      </section>
+      <hr>
+      <section class="copyright-section">
+        <div class="copyright">
+          <p>
+            © <a class="copyright-link" href="#">Your Site Name</a>. All Rights
+            Reserved. Designed by
+            <a href="https://htmlcodex.com/" target="_blank" class="copyright-link">HTML Codex</a>
+            Distributed By:
+            <a href="https://themewagon.com/" target="_blank" class="copyright-link">ThemeWagon</a>
+          </p>
+        </div>
+        <nav>
+          <ul class="copyright-list">
+            <li><a class="footer-link" href="#">Privacy</a></li>
+            <li><a class="footer-link" href="#">Terms</a></li>
+            <li><a class="footer-link" href="#">FAQs</a></li>
+            <li><a class="footer-link" href="#">Help</a></li>
+          </ul>
+        </nav>
+      </section>
+    </footer>
   </main>
 </body>
 
