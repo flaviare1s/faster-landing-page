@@ -232,7 +232,9 @@ header {
   display: none;
 }
 
-.dropdown-menu-burger { display: none; }
+.dropdown-menu-burger {
+  display: none;
+}
 
 .dropdown.open .dropdown-menu-burger {
   display: block;
