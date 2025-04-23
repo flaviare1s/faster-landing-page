@@ -1,4 +1,12 @@
 @media screen and (max-width: 450px) {
+  .nav-header {
+    display: none;
+  }
+
+  .burguer-menu {
+    display: block;
+  }
+
   main {
     width: 100%;
     display: flex;
@@ -139,6 +147,14 @@
 }
 
 @media screen and (min-width: 451px) and (max-width: 768px) {
+  .nav-header {
+    display: none;
+  }
+
+  .burguer-menu {
+    display: block;
+  }
+
   .background {
     width: 100%;
   }
@@ -270,6 +286,14 @@
 }
 
 @media screen and (min-width: 769px) and (max-width: 1023px) {
+  .nav-header {
+    display: none;
+  }
+
+  .burguer-menu {
+    display: block;
+  }
+
   .banner-texto h1 {
     font-size: 32px;
   }
@@ -322,16 +346,5 @@
 
   .preco {
     display: flex;
-  }
-}
-
-@media screen and (min-width: 1024px) and (max-width: 1400px) {
-  .grid-precos {
-    grid-template-columns: 1fr;
-    margin-top: 30px;
-  }
-
-  .grid-team {
-    grid-template-columns: 1fr 1fr;
   }
 }
