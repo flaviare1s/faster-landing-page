@@ -47,3 +47,27 @@ menuIcon.addEventListener('click', (e) => {
 document.addEventListener('click', () => {
   menuMobile.classList.remove('active')
 })
+
+if (document.querySelector(".burger-menu")) {
+  const burger = document.getElementById("menu");
+  const nav = document.getElementById("menu-mobile");
+  burger.addEventListener("click", () => {
+    nav.classList.toggle("open");
+  });
+
+  document.querySelectorAll(".dropdown-toggle-burger").forEach((btn) => {
+    btn.addEventListener("click", (e) => {
+      e.stopPropagation();
+      btn.parentElement.classList.toggle("open");
+    });
+  });
+
+  document.addEventListener("click", (e) => {
+    if (!nav.contains(e.target) && !burger.contains(e.target)) {
+      nav.classList.remove("open");
+      nav
+        .querySelectorAll(".dropdown.open")
+        .forEach((d) => d.classList.remove("open"));
+    }
+  });
+}
