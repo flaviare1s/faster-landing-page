@@ -28,11 +28,19 @@
     </div>
     <nav class="nav-header">
       <ul class="nav-list">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="index.html">About</a></li>
-        <li><a href="index.html">Service</a></li>
-        <li> <a class="dropdown-link" href="index.html">Pages <i class="fa-solid fa-caret-down"></i></a></li>
-        <li><a href="index.html">Contact</a></li>
+        <li><a class="home" href="index.html">Home</a></li>
+        <li><a class="nav-link-header" href="index.html">About</a></li>
+        <li><a class="nav-link-header" href="index.html">Service</a></li>
+        <li class="dropdown">
+          <button class="nav-link-header dropdown-toggle">
+            Pages <i class="fa-solid fa-caret-down"></i>
+          </button>
+          <ul class="dropdown-menu">
+            <li><a href="#">Blog Grid</a></li>
+            <li><a href="#">Blog Detail</a></li>
+          </ul>
+        </li>
+        <li><a class="nav-link-header" href="index.html">Contact</a></li>
       </ul>
       <button type="submit" class="btn-header">Get a Quote</button>
     </nav>
@@ -43,10 +51,18 @@
 
     <nav id="menu-mobile" class="nav-burger-menu">
       <ul class="nav-list-burger">
-        <li><a href="index.html">Home</a></li>
+        <li><a class="home home-burguer" href="index.html">Home</a></li>
         <li><a href="index.html">About</a></li>
         <li><a href="index.html">Service</a></li>
-        <li> <a class="dropdown-link" href="index.html">Pages <i class="fa-solid fa-caret-down"></i></a></li>
+        <li class="dropdown">
+          <button class="nav-link-header dropdown-toggle dropdown-toggle-burger">
+            Pages <i class="fa-solid fa-caret-down"></i>
+          </button>
+          <ul class="dropdown-menu-burger">
+            <li><a href="#">Blog Grid</a></li>
+            <li><a href="#">Blog Detail</a></li>
+          </ul>
+        </li>
         <li><a href="index.html">Contact</a></li>
       </ul>
     </nav>
