@@ -80,7 +80,7 @@ header {
   outline: none;
   justify-content: space-around;
   align-items: center;
-  gap: 30px;
+  gap: 15px;
 }
 
 .nav-list li {
@@ -188,7 +188,10 @@ header {
   color: inherit;
   font: inherit;
   cursor: pointer;
-  margin-top: 30px;
+}
+
+.toggle-desktop {
+  margin-top: 50px;
 }
 
 .dropdown {
@@ -200,8 +203,8 @@ header {
   padding-bottom: 0px !important;
 }
 
-.nav-link-header-burguer {
-  margin-bottom: 14px;
+.nav-link-header-burger {
+  margin-top: -24px;
 }
 
 .dropdown-menu {
@@ -217,6 +220,7 @@ header {
   display: none;
   z-index: 10;
   transform: translateY(-28px);
+  margin-top: -25px;
 }
 
 .dropdown:hover .dropdown-menu {
