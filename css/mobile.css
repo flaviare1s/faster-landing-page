@@ -377,3 +377,13 @@
     display: flex;
   }
 }
+
+@media screen and (min-width: 1290px) {
+  .toggle-desktop {
+  margin-top: 30px;
+  }
+
+  .dropdown-menu {
+  margin-top: -10px;
+}
+}
