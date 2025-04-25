@@ -1,4 +1,8 @@
 @media screen and (max-width: 450px) {
+  header {
+    width: 100%;
+  }
+
   .nav-header {
     display: none;
   }
@@ -160,6 +164,10 @@
 }
 
 @media screen and (min-width: 451px) and (max-width: 768px) {
+  header {
+    width: 100%;
+  }
+
   .nav-header {
     display: none;
   }
@@ -311,6 +319,10 @@
 }
 
 @media screen and (min-width: 769px) and (max-width: 1023px) {
+  header {
+    width: 100%;
+  }
+
   .nav-header {
     display: none;
   }
