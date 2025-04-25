@@ -10,8 +10,8 @@
 /* Reset */
 
 * {
-  margin: 0;
-  padding: 0;
+  margin: 0px;
+  padding: 0px;
   box-sizing: border-box;
 }
 
@@ -21,7 +21,6 @@ body {
   font-family: var(--font-family-poppins);
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
   overflow-x: hidden;
 }
@@ -41,13 +40,23 @@ body {
 }
 
 /* Header */
+
 header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 100px;
+  gap: 150px;
   width: 85%;
   height: 80px;
+  padding: 0 30px;
+  
+}
+
+.logo img {
+ width: 190px; /* Ajuste a largura conforme necessário*/
+ height: auto; /* Ajuste a altura conforme necessário*/ 
+ display: block;
+   
 }
 
 .nav-header {
@@ -55,7 +64,7 @@ header {
   justify-content: space-between;
   align-items: center;
   background-color: #fff;
-  gap: 50px;
+  gap: 160px;
   position: relative;
 }
 
@@ -67,6 +76,8 @@ header {
   padding-bottom: 0.5rem;
   padding-top: 0.5rem;
   border: none;
+  min-width: 180px;
+  margin-top: 12px;
 }
 
 .btn-header:hover {
@@ -80,7 +91,7 @@ header {
   outline: none;
   justify-content: space-around;
   align-items: center;
-  gap: 15px;
+  
 }
 
 .nav-list li {
